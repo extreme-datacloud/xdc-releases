@@ -1,5 +1,5 @@
-Welcome to eXtreme-DataCloud Releases page
-================================================
+Welcome to eXtreme-DataCloud releases Documentation
+===================================================
 
 You'll find here usefull information regarding the eXtreme-DataCloud
 services and components **releases**, their schedules, documentation and
@@ -11,12 +11,37 @@ eXtreme-DataCloud releases
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+.. contents::
 
 Release repositories
 --------------------
 
-.. todo:: To be completed
+Source Code repositories
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Source code repositories are available on `GitHub under the "indigo-dc" and "extreme-datacloud" organizations <http://bit.ly/extreme-datacloud>`_ 
+
+Artefacts repositories
+~~~~~~~~~~~~~~~~~~~~~~
+
+eXtreme-DataCloud **production** (stable) repositories:
+
+* `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
+* `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xc/production/1/ubuntu/dists/trusty/main/>`_
+
+  * containing signed, well tested software components
+
+* third-party:
+
+  * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/>`_
+  * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/trusty/third-party>`_
+
+    * containing packages that are not part of eXtreme-DataCloud project, or not part of the base OS or EPEL, but used as dependencies by other eXtreme-DataCloud components
+
+YUM & APT **configuration files** are available `here <http://repo.indigo-datacloud.eu/xdc/repos>`_
+or use the **xdc-release** package to install eXtreme-DataCloud repositories
+
 
 Release schedule
 ----------------
@@ -39,10 +64,16 @@ Support Model
 Supported platforms
 -------------------
 
--  eXtreme-DataCloud releases are supported for the following
-   platforms:
-
-   -  CentOS7 & Ubuntu 18.04
+- eXtreme-DataCloud releases are supported on the following 
+  platforms:
+  
+  - CentOS7 & Ubuntu 16.04
+  
+    - for the products distributed through rpms and deb packages
+    
+  - all platforms supporting Docker containers
+    
+    - for the products distributed as docker images
 
 Supported artifacts & packaging formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -53,7 +84,7 @@ Supported artifacts & packaging formats
    -  Sources: when available, package files that contain all of the necessary files to compile/build the respective piece of software
    -  Tarballs: clients are distributed as tarballs for all the platforms
 
-- Containers: Docker images are available for almost all project software
+- Containers: Docker images are made available for some of the project software
 
 
 Indices and tables
