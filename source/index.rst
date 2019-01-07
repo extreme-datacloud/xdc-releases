@@ -5,14 +5,17 @@ You'll find here usefull information regarding the eXtreme-DataCloud
 services and components **releases**, their schedules, documentation and
 support.
 
+.. contents::
+
 eXtreme-DataCloud releases
-------------------------------
+--------------------------
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-.. contents::
+   releases/pulsar/index.rst
+
 
 Release repositories
 --------------------
