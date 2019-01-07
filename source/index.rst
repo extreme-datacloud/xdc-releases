@@ -1,4 +1,4 @@
-Welcome to eXtreme-DataCloud releases's page
+Welcome to eXtreme-DataCloud Releases page
 ================================================
 
 You'll find here usefull information regarding the eXtreme-DataCloud
