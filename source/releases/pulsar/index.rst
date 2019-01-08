@@ -5,7 +5,6 @@ The `eXtreme-DataCloud <https://extreme-datacloud.eu/>`__
 project is pleased to announce the general availability of its **first
 public software release**, codenamed **Pulsar**
 
-This release …
 
 Included components
 -------------------
@@ -13,7 +12,12 @@ Included components
 .. toctree::
    :maxdepth: 1
 
-   orchent
+   cod 
+   dcache
+   dynafed
+   eos
+   fts 
+   onedata
    paas-orchestrator
    ttt
 
@@ -24,11 +28,37 @@ Highlights
 
 Key technical highlights:
 
+- dCache
+
+  - new QoS types integration, aggregated QoS for storage federations
+  - OpenIDConnect support in dcache_view
+  - dcache storage events (SSE notifications): Allow non-dCache agent 
+    to get notified that something of interest happen inside dCache
+
+- Dynafed
+
+  - Integration of OIDC authentication
+
+- EOS 
+
+  - Caching with xcache for geographic deployment: Xcache deployed
+    at a remote centre to accelerate its local CPU
+  - External storage adoption (Through an S3 or a WebDAV interface)
+  - External data adoption (Data already present on a system described
+    above can be incorporated into EOS)
+
+- FTS & GFAL
+
+  - QoS support: can now accept a QoS job
+  - OpenIDConnect support
+  - QoS in gfal (gfal with basic cdmi client) – python bindings available
+
 -  PaaS Orchestrator
 
    -  Hybrid deployments on multiple sites
    -  Support to specifying specialized computing hardware Improved
       support for deployment failures
+
 
 
 Release Notes
