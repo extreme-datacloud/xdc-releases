@@ -157,13 +157,13 @@ Most complex software contains bugs, we are not an exception. One of the
 features of free and open source software is the ability to report bugs,
 helping to fix or improve the software you use.
 
-eXtreme-DataCloud project uses …
-
+eXtreme-DataCloud project uses the `INDIGO Catch-All GGUS - Support Unit <https://wiki.egi.eu/wiki/GGUS:INDIGO_DataCloud_Catch-all_FAQ>`_ and
+the *support@extreme-datacloud.eu* for general support requests. 
 More details regarding each product support channels are provided in the
 respective products release pages.
 
 Developers, researchers and IT enthusiasts: feel free to write to
-info@project to ask for more information on how to use XDC solutions
+info@extreme-datacloud.eu to ask for more information on how to use XDC solutions
 for your work. For automatic notifications you can register to the eXtreme-DataCloud release RSS feed or subscribe to the 
 eXtreme-DataCloud Announce Mailing list. You can also socialize with us
-via Twitter, Facebook and join our LinkedIn group.
+via `Twitter <https://twitter.com/XtremeDataCloud>`_, Facebook and join our `LinkedIn group <https://www.linkedin.com/groups/12181004/>`_.
