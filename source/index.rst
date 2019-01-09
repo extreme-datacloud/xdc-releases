@@ -31,14 +31,14 @@ Artefacts repositories
 eXtreme-DataCloud **production** (stable) repositories:
 
 * `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
-* `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xc/production/1/ubuntu/dists/trusty/main/>`_
+* `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xc/production/1/ubuntu/dists/xenial/main/>`_
 
   * containing signed, well tested software components
 
 * third-party:
 
-  * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/>`_
-  * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/trusty/third-party>`_
+  * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview/>`_
+  * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
 
     * containing packages that are not part of eXtreme-DataCloud project, or not part of the base OS or EPEL, but used as dependencies by other eXtreme-DataCloud components
 
