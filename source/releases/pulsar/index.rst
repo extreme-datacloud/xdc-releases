@@ -73,7 +73,7 @@ Key technical highlights:
 Release Notes
 -------------
 
-The XDC-1/Pulsar release consists in X Products and guides:
+The XDC-1 (Pulsar) release consists in X Products and and a number of technical guides:
 
 -  X OS packages
 
@@ -86,7 +86,7 @@ The XDC-1/Pulsar release consists in X Products and guides:
 The release is fully supported 
 - on the following Operating Systems platforms: 
    - CentOS 7
-   -  Ubuntu 18.04
+   - Ubuntu 16.04
    - Optionally PTs support also other OS platforms. You can find more information in the individual
      products documentation.
 
