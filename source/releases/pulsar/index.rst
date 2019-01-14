@@ -28,6 +28,11 @@ Highlights
 
 Key technical highlights:
 
+- CachingOnDemand
+
+  - deployment receipts for geographically distributed caches (via xcache)
+  - deployment receipts for scalable local caches (via xcache and http)
+
 - dCache
 
   - new QoS types integration, aggregated QoS for storage federations
@@ -55,10 +60,14 @@ Key technical highlights:
 
 -  PaaS Orchestrator
 
-   -  Hybrid deployments on multiple sites
-   -  Support to specifying specialized computing hardware Improved
-      support for deployment failures
+   - Implementation of Dynafed plugin – interaction via INDIGO IAM OAUTH2 token
+   - Enhancement of ONEDATA plugin
 
+- Onedata
+
+  - Performance and stability improvements 
+  - support for groups and roles
+  - new RADOS driver
 
 
 Release Notes
@@ -79,7 +88,7 @@ The release is fully supported
    - CentOS 7
    -  Ubuntu 18.04
    - Optionally PTs support also other OS platforms. You can find more information in the individual
-products documentation.
+     products documentation.
 
 You can find in the later sections the full list of products, with
 detailed release notes and instructions for their
