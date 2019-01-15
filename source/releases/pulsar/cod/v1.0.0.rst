@@ -1,0 +1,20 @@
+v1.0.0
+------------
+
+What’s new
+~~~~~~~~~~
+
+This is the first version of the CachingOnDemand - providing recipes and PaaS description templates for an end to end deployment of an XCache cluster.
+
+List of RfCs
+~~~~~~~~~~~~
+* N/A
+
+Known Issues
+~~~~~~~~~~~~
+
+* None
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+* Docker Container:

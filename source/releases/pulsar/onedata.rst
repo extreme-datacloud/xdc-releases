@@ -1,9 +1,9 @@
-CachingOnDemand
+Onedata
 ==============
 
 .. contents:: Table of Contents
 
-**Description of CachingOnDemand**
+**Description of Onedata**
 
 Release Notes
 -------------
@@ -12,7 +12,7 @@ Release Notes
    :maxdepth: 1
    :glob:
 
-   cod/*
+   onedata/*
 
 Documentation
 -------------
@@ -20,7 +20,7 @@ Documentation
 Support
 -------
 
-- GitHub issues: https://github.com/indigo-dc/CachingOnDemand/issues
+- GitHub issues: 
 
 - DEEP project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
 

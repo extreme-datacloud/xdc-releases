@@ -3,7 +3,8 @@ CachingOnDemand
 
 .. contents:: Table of Contents
 
-**Description of CachingOnDemand**
+**The CachingOnDemand** system provides recipes and PaaS description templates for an
+end to end deployment of an XCache cluster.
 
 Release Notes
 -------------
@@ -16,11 +17,14 @@ Release Notes
 
 Documentation
 -------------
+Detailed documentation is available at:
+
+* `GitHub.io <https://cloud-pg.github.io/CachingOnDemand/>`_
 
 Support
 -------
 
-- GitHub issues: https://github.com/indigo-dc/CachingOnDemand/issues
+- GitHub issues: https://github.com/Cloud-PG/CachingOnDemand/issues
 
-- DEEP project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
+- XDC project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
 
