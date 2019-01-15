@@ -136,9 +136,8 @@ repository files.
 On the `DockerHub Registry <https://hub.docker.com/>`__, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
 
 -  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/dashboard/>`__,
-   for Core Services
--  `xdc <https://hub.docker.com/u/xdc/dashboard/>`__, for
-   user applications modules
+   
+-  `xdc <https://hub.docker.com/u/extremedatacloud/dashboard/>`__
 
 Containers present in those repositories and released in XDC-1 are
 tagged with “XDC-1” tag and signed, leveraging the Docker’s trust
