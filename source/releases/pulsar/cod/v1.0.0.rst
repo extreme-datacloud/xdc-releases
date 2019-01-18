@@ -4,7 +4,8 @@ v1.0.0
 What’s new
 ~~~~~~~~~~
 
-This is the first version of the CachingOnDemand - providing recipes and PaaS description templates for an end to end deployment of an XCache cluster.
+This is the first version of the CachingOnDemand - providing recipes
+and PaaS description templates for an end to end deployment of an XCache cluster.
 
 List of RfCs
 ~~~~~~~~~~~~
@@ -17,4 +18,8 @@ Known Issues
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
+* Ansible roles: 
+  * https://github.com/indigo-dc/CachingOnDemand/tree/master/ansible 
 * Docker Container:
+    * `indigodatacloud/cachingondemand <https://hub.docker.com/r/indigodatacloud/cachingondemand/tags/>`__:DEEP-1 (signed)
+    * `indigodatacloud/cachingondemand <https://hub.docker.com/r/indigodatacloud/cachingondemand/tags/>`__:1.0.0
