@@ -4,6 +4,10 @@ vXDC-1
 What’s new
 ~~~~~~~~~~
 
+Upstream corresponding version: v. 5.1.0
+
+New features introduced:
+
 * **Quality of Service**
 
   * **Users** will interact with this feature using the graphical UI dCache View or through the
