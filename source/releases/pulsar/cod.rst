@@ -25,6 +25,5 @@ Support
 -------
 
 - GitHub issues: https://github.com/Cloud-PG/CachingOnDemand/issues
-
 - XDC project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
 
