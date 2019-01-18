@@ -1,4 +1,4 @@
-v1.3.3
+v18.02.0-rc13
 ------------
 
 What’s new
@@ -18,3 +18,7 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * CentOS-7 RPMS
+  *
+* Ubuntu 16.04
+  * 
+* Docker container

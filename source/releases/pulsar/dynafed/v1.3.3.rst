@@ -8,6 +8,7 @@ Dynafed **1.3.3** allows configuration of multiple concurrent authentication sys
 separate namespace prefixes. It supports OpenID Connect, both as a Relying Party (redirecting
 a browser to an IdP) and Protected Resource (consuming oauth access tokens for non-interactive
 access). This is configured through Apache's mod_auth_openidc.
+More information on the `"Authentication and Authorisation" section of documentation <https://svnweb.cern.ch/trac/lcgdm/wiki/Dynafeds>`_ 
 
 List of RfCs
 ~~~~~~~~~~~~
