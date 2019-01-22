@@ -47,5 +47,5 @@ The PaaS Orchestrator v.2.1.1-FINAL has the following services dependencies
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * Docker Container:
-    * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`__:DEEP-1 (signed)
-    * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`__:1.7.5
+    * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`__:XDC-1 (signed)
+    * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`__:2.1.1-FINAL
