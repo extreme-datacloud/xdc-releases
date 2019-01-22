@@ -25,4 +25,4 @@ Support
 -------
 
 * GitHub issues: https://github.com/indigo-dc/orchestrator/issues
-* DEEP project’s internal support ticketing system: http://jira.deep-hybrid-datacloud.eu/
+* XDC project’s internal support ticketing system: http://jira.deep-hybrid-datacloud.eu/
