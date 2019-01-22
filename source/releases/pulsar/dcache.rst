@@ -29,6 +29,5 @@ Support
 -------
 
 - GitHub issues: https://github.com/dCache/dcache/issues
-
 - XDC project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
 
