@@ -22,5 +22,5 @@ Support
 
 - GitHub issues: 
 
-- DEEP project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
+- XDC project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
 
