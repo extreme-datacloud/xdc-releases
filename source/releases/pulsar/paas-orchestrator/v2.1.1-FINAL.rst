@@ -8,28 +8,28 @@ improvements and bug fixes
 
 List of RfCs
 ~~~~~~~~~~~~
--  New features:
+*  New features:
 
-   -  Get Onedata access token using the user IAM token (fixes #294
+   *  Get Onedata access token using the user IAM token (fixes #294
       XSD-27)
-   -  Describe Dynafed resources in TOSCA (fixes #295 XSD-30)
-   -  Extend the scheduling strategy using Dynafed (fixes #296 XSD-32)
-   -  Implement Cloud Providers Retry Logic (#288 DPD-121)
-   -  Retrieve of information from CMDB (fixes #290 DPD-124)
-   -  AuthN through OIDC (fixes #291 DPD-125)
-   -  Add support for mesos tasks with GPUs (fixes #292 DPD-126)
-   -  Support IM async infrastructure creation #289
-   -  Allow to import custom CAs in the java truststore #238
+   *  Describe Dynafed resources in TOSCA (fixes #295 XSD-30)
+   *  Extend the scheduling strategy using Dynafed (fixes #296 XSD-32)
+   *  Implement Cloud Providers Retry Logic (#288 DPD-121)
+   *  Retrieve of information from CMDB (fixes #290 DPD-124)
+   *  AuthN through OIDC (fixes #291 DPD-125)
+   *  Add support for mesos tasks with GPUs (fixes #292 DPD-126)
+   *  Support IM async infrastructure creation #289
+   *  Allow to import custom CAs in the java truststore #238
 
--  improvements
+*  Improvements
 
-   -  Improve OneData Spaces definition through templates (fixes #293
+   *  Improve OneData Spaces definition through templates (fixes #293
       XSD-28)
 
--  Bug fixed:
+*  Bug fixed:
 
-   -  Return 409 status code for SQLTransientExceptions #285
-   -  (MySql) Timestamp columns have implicit default value assigned
+   *  Return 409 status code for SQLTransientExceptions #285
+   *  (MySql) Timestamp columns have implicit default value assigned
       #283
 
 Known Issues
