@@ -60,8 +60,9 @@ Key technical highlights:
 
 -  PaaS Orchestrator
 
-   - Implementation of Dynafed plugin – interaction via INDIGO IAM OAUTH2 token
-   - Enhancement of ONEDATA plugin
+  - Implementation of Dynafed plugin
+  - Interaction via INDIGO IAM OAUTH2 token
+  - Enhancement of ONEDATA plugin
 
 - Onedata
 
@@ -77,11 +78,10 @@ The XDC-1 (Pulsar) release consists in X Products and and a number of technical 
 
 -  X OS packages
 
-   -  Y RPMS & SRPMS
-   -  Z binary & source DEBS
-   -  W binary & source tarballs
+   -  100 RPMS & SRPMS, and tarballs
+   -  9 binary & source DEBS
 
--  T Docker containers
+-  6 Docker containers
 
 The release is fully supported 
 - on the following Operating Systems platforms: 
@@ -94,7 +94,7 @@ You can find in the later sections the full list of products, with
 detailed release notes and instructions for their
 installation/configuration.
 
-Installation Notes
+Generic Installation Notes
 ------------------
 
 All eXtreme-DataCloud products are distributed from standard
@@ -102,26 +102,27 @@ OperatingSystems (OS) repositories and DockerHub registry.
 
 The packages repositories have the following structure:
 
--  XDC production (stable): xdc/production/{1,2}///{base|updates}
+* XDC **production** (stable):
 
-   -  stable and signed, well tested software components
-   -  Third-party: xdc/production/{1,2}///third-party
+  * `Xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
+  * `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
 
-      -  packages that are not part of XDC, or not part of the base
-         OS or EPEL, but used as dependencies by other XDC components
+    * containing signed, well tested software components
 
--  XDC testing: xdc/testing/{1,2}//
+  * third-party:
 
-   -  packages that will become part of the next stable distribution; in
-      the certification and validation phase.
+    * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview>`_
+    * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
 
--  XDC preview: xdc/preview/{1,2}//
+      * containing packages that are not part of DEEP, or not part of the base OS or EPEL, but used as dependencies by other DEEP components
 
-   -  signed packages that will become part of the next stable update,
-      available for technical-previews
+* XDC **testing**: `deep/testing/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
 
-where \* is currently: x86_64, SRPMS (for CentOS7), and binary-amd64,
-source (for Ubuntu) \* is currently: centos7, ubuntu/dists/bionic/main
+  * containing packages that will become part of the next stable distribution; in the certification and validation phase.
+
+* XDC **preview**: `deep/preview/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
+
+  * containing signed packages that will become part of the next stable update, available for technical-previews
 
 All packages are signed with the INDIGO - DataCloud gpg key. The public
 key can be downloaded from
@@ -144,8 +145,7 @@ tagged with “XDC-1” tag and signed, leveraging the Docker’s trust
 features so that users can pull trusted images.
 
 To understand how to install and configure XDC-1/Pulsar services and
-components either refer to the `Generic Installation and Configuration
-Guide <https://add_generic>`__ chapter or to each individual product
+components either refer to the `Generic Installation Notes`_ chapter or to each individual product
 documentation.
 
 Software
@@ -166,7 +166,7 @@ features of free and open source software is the ability to report bugs,
 helping to fix or improve the software you use.
 
 eXtreme-DataCloud project uses the `INDIGO Catch-All GGUS - Support Unit <https://wiki.egi.eu/wiki/GGUS:INDIGO_DataCloud_Catch-all_FAQ>`_ and
-the *support@extreme-datacloud.eu* for general support requests. 
+the *support@extreme-datacloud.eu* for general support requests.
 More details regarding each product support channels are provided in the
 respective products release pages.
 
