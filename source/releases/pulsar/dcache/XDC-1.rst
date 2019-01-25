@@ -4,7 +4,7 @@ vXDC-1
 What’s new
 ~~~~~~~~~~
 
-Upstream corresponding version: v. 5.1.0
+Upstream corresponding version: v. 5.0.0
 
 **Highlights**
 
@@ -23,6 +23,9 @@ Upstream corresponding version: v. 5.1.0
 **Acknowledgments**
 
 * We thank HTW Berlin students Marcel Munce, Ferdinand Wolff and MaKrHTW (???) as well as Onno Zweers from surfSARA for their contributions.
+
+List of RfCs
+~~~~~~~~~~~~
 
 **Release 5.0.0**
 
