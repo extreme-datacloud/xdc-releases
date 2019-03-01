@@ -44,7 +44,7 @@ Key technical highlights:
 
   - Integration of OIDC authentication
 
-- EOS 
+- EOS
 
   - Caching with xcache for geographic deployment: Xcache deployed
     at a remote centre to accelerate its local CPU
@@ -66,9 +66,9 @@ Key technical highlights:
 
 - Onedata
 
-  - Performance and stability improvements 
-  - support for groups and roles
-  - new RADOS driver
+  - Performance and stability improvements
+  - Support for groups and roles
+  - New RADOS driver
 
 
 Release Notes
@@ -76,10 +76,10 @@ Release Notes
 
 The XDC-1 (Pulsar) release consists in X Products and and a number of technical guides:
 
--  X OS packages
+-  113 OS packages
 
    -  100 RPMS & SRPMS, and tarballs
-   -  9 binary & source DEBS
+   -  13 binary & source DEBS
 
 -  6 Docker containers
 
