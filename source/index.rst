@@ -31,7 +31,7 @@ Artefacts repositories
 eXtreme-DataCloud **production** (stable) repositories:
 
 * `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
-* `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xc/production/1/ubuntu/dists/xenial/main/>`_
+* `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
 
   * containing signed, well tested software components
 
