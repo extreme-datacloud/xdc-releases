@@ -114,13 +114,13 @@ The packages repositories have the following structure:
     * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview>`_
     * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
 
-      * containing packages that are not part of DEEP, or not part of the base OS or EPEL, but used as dependencies by other DEEP components
+      * containing packages that are not part of eXtreme DataCloud, or not part of the base OS or EPEL, but used as dependencies by other eXtreme DataCloud components
 
-* XDC **testing**: `deep/testing/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
+* XDC **testing**: `xdc/testing/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
 
   * containing packages that will become part of the next stable distribution; in the certification and validation phase.
 
-* XDC **preview**: `deep/preview/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
+* XDC **preview**: `xdc/preview/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
 
   * containing signed packages that will become part of the next stable update, available for technical-previews
 
