@@ -24,7 +24,8 @@ Documentation
 Detailed documentation is available at:
 
 * `FTS3 Documentation <http://fts-docs-devel.web.cern.ch/fts-docs-devel/>`_
-  * in particular the `Features section <http://fts-docs-devel.web.cern.ch/fts-docs-devel/docs/features.html`_ with information on OIDC and QoS support
+
+  * in particular the `Features section <http://fts-docs-devel.web.cern.ch/fts-docs-devel/docs/features.html>`_ with information on OIDC and QoS support
 * `FTS3 at CERN <https://fts.web.cern.ch/>`_
 
 Support

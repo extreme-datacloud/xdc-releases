@@ -25,6 +25,7 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * CentOS-7 RPMS - in group `applications/internet <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/applications.internet.group.html>`_
+
   * dynafed - Ultra-scalable dynamic system for federating HTTP-based storage resources
   * dynafed-dmlite-frontend - dmlite plugin for dynafed
   * dynafed-dmlite-plugin - dmlite plugin for dynafed
