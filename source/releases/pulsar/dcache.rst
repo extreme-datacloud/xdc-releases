@@ -23,6 +23,7 @@ Documentation
 Detailed documentation is available at:
 
 * `dCache Manuals <https://www.dcache.org/manuals/index.shtml>`_
+
   * In particular `dCache Book 5.0 <https://www.dcache.org/manuals/Book-5.0/>`_
 
 Support
