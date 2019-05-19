@@ -104,7 +104,7 @@ The packages repositories have the following structure:
 
 * XDC **production** (stable):
 
-  * `Xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
+  * `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
   * `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
 
     * containing signed, well tested software components
@@ -124,7 +124,7 @@ The packages repositories have the following structure:
 
   * containing signed packages that will become part of the next stable update, available for technical-previews
 
-All packages are signed with the INDIGO - DataCloud gpg key. The public
+All signed packages use the INDIGO - DataCloud gpg key. The public
 key can be downloaded from
 `here <http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc>`__,
 and the fingerprint from
