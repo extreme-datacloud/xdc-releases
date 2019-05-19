@@ -30,19 +30,15 @@ Artefacts repositories
 
 eXtreme-DataCloud **production** (stable) repositories:
 
-* `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
-* `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
-
+* xdc/production/{1,2}/centos7/x86_64/{`base <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_ | `updates <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/>`_}
+* xdc/production/{1,2}/ubuntu/dists/xenial/main/{`binary-amd64 <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64>`_, `source <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/source/>`_}
   * containing signed, well tested software components
-
 * third-party:
-
   * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview/>`_
-  * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
-
+  * xdc/production/{1,2}/ubuntu/dists/xenial/third-party{`binary-amd64 <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party/binary-amd64>`_,`source <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party/source>`_}
     * containing packages that are not part of eXtreme-DataCloud project, or not part of the base OS or EPEL, but used as dependencies by other eXtreme-DataCloud components
 
-YUM & APT **configuration files** are available `here <http://repo.indigo-datacloud.eu/xdc/repos>`_
+YUM & APT **configuration files** are available `here <http://repo.indigo-datacloud.eu/repository/xdc/repos>`_
 or use the **xdc-release** package to install eXtreme-DataCloud repositories
 
 

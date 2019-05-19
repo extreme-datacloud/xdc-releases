@@ -20,6 +20,7 @@ Documentation
 -------------
 
 Detailed Documentation is available at:
+
 * `OneData Guides <https://onedata.org/#/home/documentation/index.html>`_ 
 
 Support

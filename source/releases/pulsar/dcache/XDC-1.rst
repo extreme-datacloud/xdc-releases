@@ -282,9 +282,8 @@ Please find bellow notes on how to enable and exploit the new features introduce
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * CentOS-7 RPMS
-    * `dcache-5.1.0-1.xdc.noarch.rpm <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/dcache.html>`_
-    * `dcache-srmclient-5.1.0-1.xdc.noarch.rpm <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/dcache-srmclient.html>`_
+    * `dcache-5.0.0-1.xdc.noarch.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/dcache.html>`_
 
 
 * Ubuntu 16.04 DEBS
-    * 
+    * `dcache-5.0.0-1.xdc.noarch.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/dcache_5.0.0-1.xdc_all.deb>`_ 
