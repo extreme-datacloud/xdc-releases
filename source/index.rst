@@ -23,7 +23,7 @@ Release repositories
 Source Code repositories
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Source code repositories are available on `GitHub under the "indigo-dc" and "extreme-datacloud" organizations <http://bit.ly/extreme-datacloud>`_ 
+Source code repositories are available on `GitHub under the "indigo-dc" and "extreme-datacloud" organizations <http://bit.ly/extreme-datacloud>`_
 
 Artefacts repositories
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -62,8 +62,7 @@ Support Model
 Supported platforms
 -------------------
 
-- eXtreme-DataCloud releases are supported on the following 
-  platforms:
+- eXtreme-DataCloud releases are supported on the following platforms:
   
   - CentOS7 & Ubuntu 16.04
   
