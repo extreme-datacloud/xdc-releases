@@ -1,0 +1,87 @@
+v3.9.0
+------------
+
+What’s new
+~~~~~~~~~~
+
+This release adds support for OpenIDConnect and offers initial, limited support
+for QoS.
+
+* **OpenIDConnect**
+
+  * FTS can be configured to authorise users on the basis of OAuth2 tokens
+    issued by an Authorisation Server such as IAM. The token can be used to subsequently drive file transfers.
+
+* **QoS**
+
+  * FTS can now be given a target QoS as part of a transfer submission. With
+    the present release, this will result in a query, via CDMI, of the QoS capabilities of the destination. This lays the foundation for the full support of managed QoS transitions in a subsequent XDC release.
+
+
+List of RfCs
+~~~~~~~~~~~~
+* `XSD-64 <https://jira.extreme-datacloud.eu/browse/XSD-64>`_ - Low level QoS client
+* `XSD-65 <https://jira.extreme-datacloud.eu/browse/XSD-64>`_ - QoS job submission
+* `XSD-67 <https://jira.extreme-datacloud.eu/browse/XSD-64>`_ - Basic OIC/OAuth support
+* `XSD-68 <https://jira.extreme-datacloud.eu/browse/XSD-64>`_ - Support for refresh tokens
+
+Known Issues
+~~~~~~~~~~~~
+
+* N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+
+* CentOS-7 RPMS
+
+  * in group `applications/internet <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/applications.internet.group.html>`_
+
+    * fts-client - File Transfer Service version 3 client
+    * fts-mysql - File Transfer Service V3 mysql plug-in
+    * fts-rest - FTS3 Rest Interface
+    * fts-rest-cli - FTS3 Rest Interface CLI
+    * fts-rest-cloud-storage - FTS3 Rest Cloud Storage extensions
+    * fts-rest-oauth2 - FTS3 Rest OAuth2 provider
+    * fts-rest-selinux - SELinux support for fts-rest
+    * fts-server-selinux - SELinux support for fts-server
+    * gfal2-all - Meta package for GFAL 2.0 install
+    * gfal2-devel - Development files of gfal2
+    * gfal2-plugin-dcap - Provides the support access for gfal2
+    * gfal2-plugin-file - Provides file support for gfal2
+    * gfal2-plugin-gridftp - Provides the gridftp support for gfal2
+    * gfal2-plugin-http - Provides the HTTP/DAV support for gfal2
+    * gfal2-plugin-lfc - Provides the lfc support for gfal2
+    * gfal2-plugin-mock - Provides a Mock dummy protocol for gfal2
+    * gfal2-plugin-rfio - Provides the rfio support for gfal2
+    * gfal2-plugin-sftp - Provide sftp support for GFAL2
+    * gfal2-plugin-srm - Provides the srm access for gfal2
+    * gfal2-plugin-xrootd - Provide xrootd support for GFAL2
+    * gfal2-python - Python bindings for gfal 2
+    * gfal2-python-doc - Documentation for gfal2-python
+    * gfal2-python3 - gfal2 python birngins for Python 3
+    * gfal2-tests - gfal2 tests
+    * python-fts - FTS3 database model
+
+  * in `Development/Debug <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/development.debug.group.html>`_
+
+    * fts-debuginfo - Debug information for package fts
+    * gfal2-debuginfo - Debug information for package gfal2
+    * gfal2-python-debuginfo - Debug information for package gfal2-python 
+
+  * in `Documentation <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/documentation.group.html>`_
+
+    * gfal2-doc - Documentation for gfal2
+
+  * in `System environment/Daemons <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/system_environment.daemons.group.html>`_
+
+    * fts-infosys - File Transfer Service version 3 infosys integration
+    * fts-msg - File Transfer Service version 3 messaging integration
+    * fts-server - File Transfer Service version 3 server
+
+* in `System environment/Libraries <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/system_environment.libraries.group.html>`_
+
+    * fts-libs - File Transfer Service version 3 libraries 
+
+
+

@@ -1,0 +1,99 @@
+v18.02.0-rc13
+------------
+
+What’s new
+~~~~~~~~~~
+
+The new versions provides many improvemenets and new features, from which the most important are:
+
+* improvements in the metadata extraction, ingestion and manipulation
+* WebDAV support
+* improvied data monotoring API allowsing to monitor the changes in data and 
+  depending on the type of the change invoking actions, ie. data replication 
+* improved speed of indexing of large datasets
+* implementation of user defined data indexes, used for querring the data based on specyfic metadata
+
+List of RfCs
+~~~~~~~~~~~~
+* Oneclient:
+
+   * VFS-4902 Added maximum upload size and connection pool size params
+   * VFS-4902 Added WebDAV helper
+   * VFS-4843 Adjusted default prefetch evaluation frequency
+   * VFS-4843 Optimized random read prefetch calculation
+   * VFS-4804 Fixed macaroon error handling
+   * VFS-4804 Fixed handshake error handling
+   * VFS-4804 Fixed reconnect
+   * VFS-4804 Removed rest based full file prefetch
+   * VFS-4741 Added sync block prefetch option
+   * VFS-4809 Added prefetch skipping for prefetched offsets
+   * VFS-4800 Fixed prefetch offset cache
+   * VFS-4800 Added block aligned prefetch offset cache
+   * VFS-4772 Align block prefetch offsets to cluster window size
+   * VFS-4660 Added synchronize block priority handling
+   * VFS-4656 Added cephrados helper
+
+* Oneprovider:
+
+   * VFS-4936 Add function to change space support size
+   * VFS-4830 add add_reduce function
+   * Updating GUI, including: VFS-4454-login-loader-close * VFS-4454 Fix hanging authorization loader spinner
+   * Upgrade rtransfer_link.
+   * Added support for webdav
+   * VFS-4936 Check if space exists when handling REST call
+   * VFS-4936 Add space support resizing
+   * VFS-4656 Added cephrados helper
+   * VFS-4463 Showing storage in GUI on storages view
+   * VFS-4560 Detect existing Let's Encrypt certificates
+   * VFS-4029 Better certificate hostname verification
+   * VFS-4504 Set min and max port for distributed erlang
+
+* Onezone:
+
+   * VFS-4623 Add defaults to dns config envs
+   * Updating GUI, including: VFS-4702-auth-icons-config * VFS-4702 Support for customizable authorization providers icons, colors and names
+    VFS-4614 New Universal auth.config for OIDC/SAML Identity Providers
+   * VFS-4633 Tokens are not consumed upon failed operation
+   * VFS-4029 Better certificate hostname verification
+   * VFS-4029 Support http Let's Encrypt challenge in OZ and OP
+   * VFS-4560 Detect existing Let's Encrypt certificates
+   * VFS-4504 Set min and max port for distributed erlang
+
+
+Known Issues
+~~~~~~~~~~~~
+
+* N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+* CentOS-7 RPMS
+
+  * `cluster-manager-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/cluster-manager.html>`_
+  * `oneclient-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/oneclient.html>`_
+  * `oneprovider-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/oneprovider.html>`_
+  * `onezone-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/onezone.html>`_
+  * `op-panel-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/op-panel.html>`_
+  * `op-worker-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/op-worker.html>`_
+  * `oz-panel-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/oz-panel.html>`_
+  * `oz-worker-18.02.0.rc13-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/oz-worker.html>`_
+
+* Ubuntu 16.04
+
+  * `cluster-manager_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/cluster-manager_18.02.0.rc13-1_amd64.deb>`_
+  * `oneclient_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneclient_18.02.0.rc13-1_amd64.deb>`_
+  * `oneprovider_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneprovider_18.02.0.rc13-1_amd64.deb>`_
+  * `onezone_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/onezone_18.02.0.rc13-1_amd64.deb>`_
+  * `op-panel_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-panel_18.02.0.rc13-1_amd64.deb>`_
+  * `op-worker_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-worker_18.02.0.rc13-1_amd64.deb>`_
+  * `oz-panel_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-panel_18.02.0.rc13-1_amd64.deb>`_
+  * `oz-worker_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-worker_18.02.0.rc13-1_amd64.deb>`_
+
+* Docker Container
+
+  * `indigodatacloud/onezone <https://hub.docker.com/r/indigodatacloud/onezone/tags/>`__:XDC-1 (signed)
+  * `indigodatacloud/onezone <https://hub.docker.com/r/indigodatacloud/oneezone/tags/>`__:18.02.0-rc13
+  * `indigodatacloud/oneprovider <https://hub.docker.com/r/indigodatacloud/oneprovider/tags/>`__:XDC-1 (signed)
+  * `indigodatacloud/oneprovider <https://hub.docker.com/r/indigodatacloud/oneprovider/tags/>`__:18.02.0-rc13
+  * `indigodatacloud/oneclient <https://hub.docker.com/r/indigodatacloud/oneclient/tags/>`__:XDC-1 (signed)
+  * `indigodatacloud/oneclient <https://hub.docker.com/r/indigodatacloud/oneclient/tags/>`__:18.02.0-rc13

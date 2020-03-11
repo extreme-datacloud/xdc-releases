@@ -1,0 +1,34 @@
+v1.3.3
+------------
+
+What’s new
+~~~~~~~~~~
+
+Dynafed **1.3.3** allows configuration of multiple concurrent authentication systems via
+separate namespace prefixes. It supports now OpenID Connect, both as a Relying Party (redirecting
+a browser to an IdP) and Protected Resource (consuming oauth access tokens for non-interactive
+access), facilitating in this way the integration with the XDC Orchestrator and allowing
+browser based access without X509 certificates.
+This is configured through Apache's mod_auth_openidc.
+
+More information on the `"Authentication and Authorisation" section of documentation <https://svnweb.cern.ch/trac/lcgdm/wiki/Dynafeds>`_ 
+
+List of RfCs
+~~~~~~~~~~~~
+* `XSD-31 <https://jira.extreme-datacloud.eu/browse/XSD-31>`_ - Enable oauth2.0 for accessing Dynafed
+
+Known Issues
+~~~~~~~~~~~~
+
+* N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+* CentOS-7 RPMS - in group `applications/internet <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/applications.internet.group.html>`_
+
+  * dynafed - Ultra-scalable dynamic system for federating HTTP-based storage resources
+  * dynafed-dmlite-frontend - dmlite plugin for dynafed
+  * dynafed-dmlite-plugin - dmlite plugin for dynafed
+  * dynafed-http-plugin - Http and WebDav plugin for dynafed
+  * dynafed-lfc-plugin - Logical File catalog (LFC) plugin for dynafed
+  * dynafed-private-devel - Development files for dynafed 

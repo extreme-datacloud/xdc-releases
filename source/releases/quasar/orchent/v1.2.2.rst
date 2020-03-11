@@ -1,0 +1,42 @@
+v1.2.2
+------
+
+What’s new
+~~~~~~~~~~
+
+The new version provides a number of new features, improvements and bug fixes
+
+List of RfCs
+~~~~~~~~~~~~
+
+*  Bug fuxes:
+
+   *  Fixed communication with oidc-agent >= 2.0.0
+
+*  New features:
+
+   *  Added support for two new flags in depcreate/depupdate operations:
+
+      *  *maxProvidersRetry*: Maximum number of cloud providers to be used
+         in case of failure (Default: UNBOUNDED).
+      *  *keepLastAttempt*: In case of failure, keep the resources
+         allocated in the last try (Default: true).
+
+-  These flags are supported starting from Orchestrator version 2.1.0
+
+Known Issues
+~~~~~~~~~~~~
+
+* None
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+* CentOS-7 RPMS
+    * `orchent-1.2.2.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/orchent.html>`_
+
+* Ubuntu 16.04 DEBS
+    * `orchent-1.2.2-amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/orchent-1.2.2-amd64.deb>`_
+
+* Docker Container:
+    * `indigodatacloud/orchent <https://hub.docker.com/r/indigodatacloud/orchent/tags/>`__:XDC-1 (signed)
+    * `indigodatacloud/orchent <https://hub.docker.com/r/indigodatacloud/orchent/tags/>`__:1.2.2
