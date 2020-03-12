@@ -15,6 +15,8 @@ eXtreme-DataCloud releases
    :maxdepth: 1
 
    releases/pulsar/index.rst
+   releases/quasar/index.rst
+
 
 
 Release repositories

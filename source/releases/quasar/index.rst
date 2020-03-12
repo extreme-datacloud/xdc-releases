@@ -1,9 +1,9 @@
-XDC-1 (Pulsar)
+XDC-2 (Quasar)
 ==============
 
 The `eXtreme-DataCloud <https://extreme-datacloud.eu/>`__
-project is pleased to announce the general availability of its **first
-public software release**, codenamed **Pulsar**
+project is pleased to announce the general availability of its **second
+public software release**, codenamed **Quasar**
 
 
 Included components
@@ -12,13 +12,13 @@ Included components
 .. toctree::
    :maxdepth: 1
 
-   cod 
-   dcache
+   cod
    dynafed
    eos
-   fts 
+   rucio 
    onedata
    paas-orchestrator
+   orchestrator-dashboard
    ttt
 
 
