@@ -29,6 +29,10 @@ Detailed documentation is available at:
     * "Using EOS" (describing the adoption of storage/files process)
     * "Client Commands" (the command to trigger the import [adoption] procedure). 
 
+  * `QoS interface <https://eos-docs.web.cern.ch/eos-docs/configuration/qos.html>`_
+  * `Converter Engine <https://eos-docs.web.cern.ch/eos-docs/configuration/converter_engine.html>`_
+
+
 Deployment automation:
 ----------------------
 

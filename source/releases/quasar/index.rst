@@ -19,6 +19,7 @@ Included components
    onedata
    paas-orchestrator
    orchestrator-dashboard
+   orchent
    ttt
 
 
