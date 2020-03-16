@@ -32,5 +32,5 @@ List of Artifacts
 * Ansible role: 
   * https://github.com/indigo-dc/CachingOnDemand/tree/master/ansible 
 * Docker Container:
-    * `indigodatacloud/cachingondemand:XDC-2 <https://hub.docker.com/r/indigodatacloud/cachingondemand/tags/>`__ (signed)
-    * `indigodatacloud/cachingondemand:v2.0.0 <https://hub.docker.com/layers/indigodatacloud/cachingondemand/XDC-2/images/sha256-74c26d0fae48b89dcc038fdc4504aa1eb80e851797dd32fa6455f414cc3b05f5?context=repo>`__
+    * `indigodatacloud/cachingondemand:XDC-2 <https://hub.docker.com/layers/indigodatacloud/cachingondemand/XDC-2/images/sha256-74c26d0fae48b89dcc038fdc4504aa1eb80e851797dd32fa6455f414cc3b05f5?context=repo>`__ (signed)
+    * `indigodatacloud/cachingondemand:v2.0.0 <https://hub.docker.com/layers/indigodatacloud/cachingondemand/v2.0.0/images/sha256-74c26d0fae48b89dcc038fdc4504aa1eb80e851797dd32fa6455f414cc3b05f5?context=repo>`__
