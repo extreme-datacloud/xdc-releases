@@ -26,7 +26,7 @@ Release Notes
 
 Detailed documentation is available at:
 
-* `GitHub README <https://github.com/indigo-dc/orchestrator/blob/v2.1.1-FINAL/README.md>`_
+* `GitHub README <https://github.com/indigo-dc/orchestrator/blob/v2.3.0-FINAL/README.md>`_
 * `GitBook Guides <https://indigo-dc.gitbooks.io/indigo-paas-orchestrator/content/>`_
 
 
