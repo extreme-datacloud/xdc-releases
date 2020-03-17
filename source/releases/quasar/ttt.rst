@@ -29,8 +29,8 @@ Documentation
 
 Detailed documentation can be found at:
 
-* `TOSCA types README <https://github.com/indigo-dc/tosca-types/blob/v3.0.0/README.md>`_
-* `TOSCA templates README <https://github.com/indigo-dc/tosca-templates>`_
+* `TOSCA types README <https://github.com/indigo-dc/tosca-types/blob/master/README.md>`_
+* `TOSCA templates README <https://github.com/indigo-dc/tosca-templates/blob/master/README.md>`_
 * `Brief guide to TOSCA <https://github.com/indigo-dc/tosca-templates/blob/master/doc/tosca.md>`_
 * `How to deploy a TOSCA Template <https://github.com/indigo-dc/tosca-templates/blob/master/doc/tosca-deploy.md>`_
 

@@ -4,42 +4,35 @@ v.4.0.1
 What’s new
 ~~~~~~~~~~
 
-This version provides many new features, improvements and bug fixes
+This version provides many new features, improvements and 
+bug fixes both in TOSCA types and templates
 
 List of RfCs
 ~~~~~~~~~~~~
 
-* New features:
+ * TOSCA types: - Tested with **Ansible 2.6.20**
+   * New features:
+     * Added type for BlockStorage and for AttachesTo relationship
+   * Improvements
+     * Improved artifacts for Kubernetes
 
-  * Added new types for Onedata and Dynafed storage resources
-  * Updated example templates for deploying Chronos dockerized jobs that
-    use Onedata for managing input/output data
-  * Updated example template for deploying a Mesos cluster
-  * Added example template for deploying a Mesos cluster with GPU support
-    and a tensorflow container on top of it that uses GPU(s)
-  * Added GPU support for compute nodes and dockerized jobs (chronos) and
-    apps (marathon)
-  * Added preemtible_instance property to support “spot” instances
-  * Added Onedata support in DODAS template
-  * Added new types for describing a Kubernetes cluster; new Ansible
-    roles implemented.
-  * Added new type for describing a JupyterHub node; new Ansible role
-    implemented.
-
-* Bug fixes for Galaxy on cloud:
-
-  * Update support to Galaxy release_18.05 in indigo-dc.galaxycloud
-  * Fix proftpd in indigo-dc.galaxycloud
-  * New ansible role for galaxy tools installation, named
-    indigo-dc.galaxycloud-tools
-  * Update tosca.nodes.indigo.GalaxyShedTool with new ansible role
-  * Fix CERN-VM FS reference data mount on cluster worker nodes on
-    galaxy artifacts
-  * Reworked ansible role (indigo-dc.galaxycloud-fastconfig) to
-    reconfigure an image with Galaxy already installed
-  * Reworked storage encryption script on indigo-dc.galaxycloud-os
-  * Fix tasks order in Galaxy elastic cluster tosca template: now
-    galaxy user is created before slurm configuration.
+ * TOSCA templates
+   * New features and improvements:
+     * Updated templates to ensure the compliance with Simple Profile in YAML 1.0
+       * these changes are mandatory for working with **Orchestrator version >= 2.2.0**
+     * Fixing typos (e.g. priviliged --> privileged)
+     * Deleted obsolete templates
+     * Deleted templates with hard-coded values for SLAs
+ 
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+ * TOSCA types are used by the PaaS Orchestrator - more details are available at:
+   * `Brief guide to TOSCA <https://github.com/indigo-dc/tosca-templates/blob/master/doc/tosca.md>`_
+   * `TOSCA types README <https://github.com/indigo-dc/tosca-types/blob/master/README.md>`_
+ * TOSCA templates are used by the PaaS Orchestrator Dashboard and directly bu users through CLIs 
+ like orchent - more details are available at:
+   * `TOSCA templates README <https://github.com/indigo-dc/tosca-templates/blob/master/README.md>`_
+   * `How to deploy a TOSCA Template <https://github.com/indigo-dc/tosca-templates/blob/master/doc/tosca-deploy.md>`_
 
 Known Issues
 ~~~~~~~~~~~~
@@ -48,5 +41,5 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * Tarballs:
-   * `tosca-types-3.0.0.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/1/centos7/x86_64/tgz/tosca-types-3.0.0.tar.gz>`_
-   * `tosca-templates-3.0.0.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/1/centos7/x86_64/tgz/tosca-templates-3.0.0.tar.gz>`_
+   * `tosca-types-4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/1/centos7/x86_64/tgz/tosca-types-3.0.0.tar.gz>`_
+   * `tosca-templates-4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/1/centos7/x86_64/tgz/tosca-templates-3.0.0.tar.gz>`_
