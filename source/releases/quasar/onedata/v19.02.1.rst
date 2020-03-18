@@ -12,12 +12,10 @@ The new versions provides many improvemenets and new features, and in particular
  * specifficaly for the ECRIN use case:
    * improvement of file indexing performance for scanning a 800k dataset 
    provided by ECRIN
- * CTA specific:
+ * specifficaly for the CTA use case:
    * the redesign of the changes stream API, to allow more fine-grained 
    control over the steam, that benefits in faster changes stream, and less 
    stress put on a oneprovider instance.
-
-   
 
 
 List of RfCs
@@ -57,6 +55,16 @@ List of RfCs
      * VFS-5994 Make 'production' Let's Encrypt mode the default
      * VFS-5940 Rename oz-worker's GUI package verification envs to more intuitive
 
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+
+* Detailed documentation on the Onedata platform installation is available at:
+  * `Oneprovider Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/deployment_tutorial.html>`_ 
+  * `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial.html>`_ 
+* Detailed documentation on the Onedata platform Updgrade is available at:
+  * `Oneprovider Upgrade <https://onedata.org/#/home/documentation/doc/administering_onedata/oneprovider_tutorial[upgrading].html>`_ 
+  * `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial[upgrading].html>`_ 
+
 Known Issues
 ~~~~~~~~~~~~
 
@@ -64,6 +72,11 @@ Known Issues
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
+
+* Dedicated scripts for:
+  * ECRON use case: `Metadata ingestion while traversing a space <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/space-traverse>`_
+  * CTA use case: `Metadata ingestion from the space changes stream <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/changes-stream>`_
+
 * CentOS-7 RPMS - version 19.02.1
 
   * `cluster-manager <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/cluster-manager.html>`_
