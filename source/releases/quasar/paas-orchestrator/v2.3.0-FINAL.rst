@@ -7,12 +7,12 @@ This version provides not only a couple of important new features, like the time
 
 List of RfCs
 ~~~~~~~~~~~~
-* New features:
-  * Added timeout for deployment creation/update. The following new parameters can be used for the REST API call to /deployment (POST/PUT):
-    * timeoutMins: overall timeout for the deployment creation/update;
-    * providerTimeoutMins: timeout for the deployment creation/update on single provider.
-  * Added credentials management for providers not integrated with IAM
-    * the credentials are automatically retrieved from Vault
+ * New features:
+   * Added timeout for deployment creation/update. The following new parameters can be used for the REST API call to /deployment (POST/PUT):
+     * timeoutMins: overall timeout for the deployment creation/update;
+     * providerTimeoutMins: timeout for the deployment creation/update on single provider.
+   * Added credentials management for providers not integrated with IAM
+     * the credentials are automatically retrieved from Vault
 
 
 * Improvements
