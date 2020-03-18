@@ -13,6 +13,7 @@ List of RfCs
  * TOSCA types: - Tested with **Ansible 2.6.20**
    * New features:
      * Added type for BlockStorage and for AttachesTo relationship
+     * Added types for Elasticsearch and Kibana
    * Improvements
      * Improved artifacts for Kubernetes
 
@@ -23,6 +24,7 @@ List of RfCs
      * Fixing typos (e.g. priviliged --> privileged)
      * Deleted obsolete templates
      * Deleted templates with hard-coded values for SLAs
+     * Added templates for XDC use-cases
  
 Installation methods
 ~~~~~~~~~~~~~~~~~~~~
