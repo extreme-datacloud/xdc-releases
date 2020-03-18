@@ -22,15 +22,14 @@ Documentation
 
 Detailed documentation can be found at:
 
-* `GitHub README <https://github.com/indigo-dc/orchestrator-dashboard/blob/master/README.md>`_
+- `GitHub README <https://github.com/indigo-dc/orchestrator-dashboard/blob/master/README.md>`_
 
 Support
 -------
 
-* GitHub issues:
-    * https://github.com/indigo-dc/orchestrator-dashboard/issues
-* XDC project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
-* Main Developer: Marica Antonacci (marica.antonacci@ba.infn.it)
+- GitHub issues: https://github.com/indigo-dc/orchestrator-dashboard/issues
+- XDC project’s internal support ticketing system: http://jira.extreme-datacloud.eu/
+- Main Developer: Marica Antonacci (marica.antonacci@ba.infn.it)
 
 
 

@@ -31,45 +31,51 @@ Key technical highlights:
 
 - CachingOnDemand
 
-  - deployment receipts for geographically distributed caches (via xcache)
-  - deployment receipts for scalable local caches (via xcache and http)
-
-- dCache
-
-  - new QoS types integration, aggregated QoS for storage federations
-  - OpenIDConnect support in dcache_view
-  - dcache storage events (SSE notifications): Allow non-dCache agent 
-    to get notified that something of interest happen inside dCache
+  - improved Ansible recipes and new Ansible tasks for kubernetes and Centos7 baremetal
 
 - Dynafed
 
-  - Integration of OIDC authentication
+  - Dynafed can now function as the active party for data distribution, having enabled the "Fourth party copy" feature. 
+    This allows services without third party copy support (such as S3) to participate fully in the data distribution infrastructure.
 
 - EOS
 
-  - Caching with xcache for geographic deployment: Xcache deployed
-    at a remote centre to accelerate its local CPU
-  - External storage adoption (Through an S3 or a WebDAV interface)
-  - External data adoption (Data already present on a system described
-    above can be incorporated into EOS)
+  - Many improvements and features on the QoS classes
+    - Addition of QoS classes and QoS API when interacting with namespace entries
+    - CDMI gateway for QoS transitions
+  - The Converter Driver, part of the Converter Engine, has been reworked using a threadpool approach and saving 
+    the information in persistent storage (QuarkDB implementation). This allows persistence 
+    (in case of an MGM shutdown), as well as more flexibility over the conversion execution, such 
+    as runtime configurable threads and runtime statistics
 
-- FTS & GFAL
+-  PaaS Orchestrator plugin
 
-  - QoS support: can now accept a QoS job
-  - OpenIDConnect support
-  - QoS in gfal (gfal with basic cdmi client) – python bindings available
+  - Implementation of timeout for deployment creation/update and credentials management for 
+    providers not integrated with IAM
+  - Added credentials management for providers not integrated with INDIGO IAM
+  - Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1)
+  - Improved retry strategy for Marathon deployments
 
--  PaaS Orchestrator
+-  PaaS Orchestrator Dashboard
 
-  - Implementation of Dynafed plugin
-  - Interaction via INDIGO IAM OAUTH2 token
-  - Enhancement of ONEDATA plugin
+  - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly 
+    deploy desired workflows and infratructures
 
 - Onedata
 
-  - Performance and stability improvements
-  - Support for groups and roles
-  - New RADOS driver
+  - Release of python bindings for onedata in a form of onedataFS (https://github.com/onedata/fs-onedatafs), allowed to greatly simplify and improve performance of programmatic operations on data located in Onedata space.
+  - Improved support of ECRIN and CTA use cases:
+    - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
+    - the redesign of the changes stream API, to allow more fine-grained control over the stream
+
+- Rucio
+
+  - The authentication and authorization mechanism was extended to support (JWT) tokens using OpenID Connect protocol
+  - Rucio user pre-provisioning (via new Rucio SCIM client) was `implemented <https://github.com/rucio/probes/pull/11>`_ as a ‘Rucio probe’ script
+
+- TOSCA types and templates
+
+  - 
 
 
 Release Notes
