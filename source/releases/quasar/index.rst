@@ -44,9 +44,16 @@ Key technical highlights:
     - Addition of QoS classes and QoS API when interacting with namespace entries
     - CDMI gateway for QoS transitions
   - The Converter Driver, part of the Converter Engine, has been reworked using a threadpool approach and saving 
-    the information in persistent storage (QuarkDB implementation). This allows persistence 
-    (in case of an MGM shutdown), as well as more flexibility over the conversion execution, such 
+    the information in persistent storage (QuarkDB implementation). This allows persistence, 
+    as well as more flexibility over the conversion execution, such 
     as runtime configurable threads and runtime statistics
+
+- Onedata
+
+  - Release of python bindings for onedata in a form of `onedataFS <https://github.com/onedata/fs-onedatafs>`_, allowed to greatly simplify and improve performance of programmatic operations on data located in Onedata space.
+  - Improved support of ECRIN and CTA use cases:
+    - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
+    - the redesign of the changes stream API, to allow more fine-grained control over the stream
 
 -  PaaS Orchestrator plugin
 
@@ -61,19 +68,13 @@ Key technical highlights:
   - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly 
     deploy desired workflows and infratructures
 
-- Onedata
-
-  - Release of python bindings for onedata in a form of onedataFS (https://github.com/onedata/fs-onedatafs), allowed to greatly simplify and improve performance of programmatic operations on data located in Onedata space.
-  - Improved support of ECRIN and CTA use cases:
-    - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
-    - the redesign of the changes stream API, to allow more fine-grained control over the stream
-
 - Rucio
 
   - The authentication and authorization mechanism was extended to support (JWT) tokens using OpenID Connect protocol
   - Rucio user pre-provisioning (via new Rucio SCIM client) was `implemented <https://github.com/rucio/probes/pull/11>`_ as a ‘Rucio probe’ script
 
 - TOSCA types and templates
+
   - Added new TOSCA types for BlockStorage, AttachesTo relationship, Elasticsearch and Kibana, 
     while impoving the ones for Kubernetes
   - Updated TOSCA templates to ensure the compliance with Simple Profile in YAML 1.0
