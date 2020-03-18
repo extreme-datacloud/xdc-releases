@@ -27,9 +27,9 @@ List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * CentOS-7 RPMS - in group `applications/internet <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/applications.internet.group.html>`_
 
-  * dynafed - Ultra-scalable dynamic system for federating HTTP-based storage resources
-  * dynafed-dmlite-frontend - dmlite plugin for dynafed
-  * dynafed-dmlite-plugin - dmlite plugin for dynafed
-  * dynafed-http-plugin - Http and WebDav plugin for dynafed
-  * dynafed-lfc-plugin - Logical File catalog (LFC) plugin for dynafed
-  * dynafed-private-devel - Development files for dynafed 
+   * dynafed - Ultra-scalable dynamic system for federating HTTP-based storage resources
+   * dynafed-dmlite-frontend - dmlite plugin for dynafed
+   * dynafed-dmlite-plugin - dmlite plugin for dynafed
+   * dynafed-http-plugin - Http and WebDav plugin for dynafed
+   * dynafed-lfc-plugin - Logical File catalog (LFC) plugin for dynafed
+   * dynafed-private-devel - Development files for dynafed 
