@@ -9,10 +9,10 @@ List of RfCs
 ~~~~~~~~~~~~
 * New features:
    * Added timeout for deployment creation/update. The following new parameters can be used for the REST API call to /deployment (POST/PUT):
-     * timeoutMins: overall timeout for the deployment creation/update;
-     * providerTimeoutMins: timeout for the deployment creation/update on single provider.
+      * timeoutMins: overall timeout for the deployment creation/update;
+      * providerTimeoutMins: timeout for the deployment creation/update on single provider.
    * Added credentials management for providers not integrated with IAM
-     * the credentials are automatically retrieved from Vault
+      * the credentials are automatically retrieved from Vault
 
 * Improvements
     * Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1) that fixes problem with block 
