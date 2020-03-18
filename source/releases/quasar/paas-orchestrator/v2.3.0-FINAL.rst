@@ -14,7 +14,6 @@ List of RfCs
    * Added credentials management for providers not integrated with IAM
      * the credentials are automatically retrieved from Vault
 
-
 * Improvements
     * Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1) that fixes problem with block 
     device attachment.
