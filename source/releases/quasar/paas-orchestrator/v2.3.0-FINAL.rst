@@ -15,12 +15,12 @@ List of RfCs
       * the credentials are automatically retrieved from Vault
 
 * Improvements
-    * Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1) that fixes problem with block 
-    device attachment.
-    * Updated IM Java Client library (v0.4.14).
-    * Now users can list only their own deployments. Only users belonging to a specific 
-    IAM group (configured in the mandatory field "admingroup") can list all the deployments and their details.
-    * Improved retry strategy for Marathon deployments
+      * Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1) that fixes problem with block 
+   device attachment.
+      * Updated IM Java Client library (v0.4.14).
+      * Now users can list only their own deployments. Only users belonging to a specific 
+   IAM group (configured in the mandatory field "admingroup") can list all the deployments and their details.
+      * Improved retry strategy for Marathon deployments
 
 
 * Bug fixed:
