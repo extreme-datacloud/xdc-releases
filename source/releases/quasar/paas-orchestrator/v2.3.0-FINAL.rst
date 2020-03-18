@@ -16,7 +16,7 @@ List of RfCs
 
 * Improvements
    * Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1) that fixes problem with block 
-      device attachment.
+   device attachment.
    * Updated IM Java Client library (v0.4.14).
    * Now users can list only their own deployments. Only users belonging to a specific 
    IAM group (configured in the mandatory field "admingroup") can list all the deployments and their details.
@@ -24,8 +24,8 @@ List of RfCs
 
 
 * Bug fixed:
-    * Fixed OnedataSpace resource management
-    * Fixed configuration (application.properties)
+   * Fixed OnedataSpace resource management
+   * Fixed configuration (application.properties)
 
 
 Service Dependencies
@@ -37,7 +37,7 @@ The PaaS Orchestrator v.2.3.0-FINAL has the following services dependencies
 * SLAM release v2.0.0 (docker image indigodatacloud/slam:v2.0.0)
 * CPR release v0.7.0 (docker image indigodatacloud/cloudproviderranker:indigo_2)
 * Monitoring - Zabbix Wrapper 1.0.2 (docker image indigodatacloud/zabbix-wrapper:indigo_2)
-    * Monitoring probes: Openstack probe 1.4.2, Mesos probe 1.4 and QCG probe 1.0
+   * Monitoring probes: Openstack probe 1.4.2, Mesos probe 1.4 and QCG probe 1.0
 * IM release >= 1.9.1 
 * (Optional) Onedata v18.0.2-rc[11,12]
 * tosca-types v4.0.X
@@ -57,5 +57,5 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 * Docker Container:
-    * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`_:XDC-2 (signed)
-    * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`_:2.3.0-FINAL
+   * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`_:XDC-2 (signed)
+   * `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`_:2.3.0-FINAL
