@@ -74,28 +74,29 @@ Key technical highlights:
   - Rucio user pre-provisioning (via new Rucio SCIM client) was `implemented <https://github.com/rucio/probes/pull/11>`_ as a ‘Rucio probe’ script
 
 - TOSCA types and templates
-
-  - 
-
+  - Added new TOSCA types for BlockStorage, AttachesTo relationship, Elasticsearch and Kibana, 
+    while impoving the ones for Kubernetes
+  - Updated TOSCA templates to ensure the compliance with Simple Profile in YAML 1.0
+  - Added TOSCA templates for the LifeWatch use-case
 
 Release Notes
 -------------
 
-The XDC-1 (Pulsar) release consists in X Products and and a number of technical guides:
+The XDC-2 (Quasar) release consists in 9 Products:
 
--  113 OS packages
+-  XXX OS packages
 
-   -  100 RPMS & SRPMS, and tarballs
-   -  13 binary & source DEBS
+   -  Y RPMS & SRPMS, and tarballs
+   -  Z binary & source DEBS
 
--  6 Docker containers
+-  7 Docker containers
 
 The release is fully supported 
 - on the following Operating Systems platforms: 
-   - CentOS 7
-   - Ubuntu 16.04
-   - Optionally PTs support also other OS platforms. You can find more information in the individual
-     products documentation.
+  - CentOS 7
+  - Ubuntu 16.04 & 18.04
+  - Optionally PTs support also other OS platforms. You can find more information in the individual
+    products documentation.
 
 You can find in the later sections the full list of products, with
 detailed release notes and instructions for their
@@ -105,34 +106,35 @@ Generic Installation Notes
 ------------------
 
 All eXtreme-DataCloud products are distributed from standard
-OperatingSystems (OS) repositories and DockerHub registry.
+Operating Systems (OS) repositories and DockerHub registry.
 
 The packages repositories have the following structure:
 
 * XDC **production** (stable):
 
-  * `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
-  * `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
+  * `xdc/production/2/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/>`_
+  * `xdc/production/2/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/>`_
+  * `xdc/production/2/ubuntu/dists/bionic/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/>`_
 
     * containing signed, well tested software components
 
   * third-party:
 
-    * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview>`_
-    * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
+    * `xdc/production/2/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/third-party/repoview>`_
+    * `xdc/production/2/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/third-party>`_
+    * `xdc/production/2/ubuntu/dists/bionic/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/third-party>`_
 
       * containing packages that are not part of eXtreme DataCloud, or not part of the base OS or EPEL, but used as dependencies by other eXtreme DataCloud components
 
-* XDC **testing**: `xdc/testing/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
+* XDC **testing**: `xdc/testing/2/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
 
   * containing packages that will become part of the next stable distribution; in the certification and validation phase.
 
-* XDC **preview**: `xdc/preview/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
+* XDC **preview**: `xdc/preview/2/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
 
   * containing signed packages that will become part of the next stable update, available for technical-previews
 
-All signed packages use the INDIGO - DataCloud gpg key. The public
-key can be downloaded from
+All signed packages use the INDIGO - DataCloud gpg key. The public key can be downloaded from
 `here <http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc>`__,
 and the fingerprint from
 `here <http://repo.indigo-datacloud.eu/repository/INDIGODC_key_fingerprint.asc>`__.
@@ -147,9 +149,8 @@ On the `DockerHub Registry <https://hub.docker.com/>`__, eXtreme-DataCloud uses 
    
 -  `xdc <https://hub.docker.com/u/extremedatacloud/dashboard/>`__
 
-Containers present in those repositories and released in XDC-1 are
-tagged with “XDC-1” tag and signed, leveraging the Docker’s trust
-features so that users can pull trusted images.
+Containers present in those repositories and released in XDC-2 are
+tagged with “XDC-2” tag and signed, leveraging the Docker’s trust features so that users can pull trusted images.
 
 To understand how to install and configure XDC-1/Pulsar services and
 components either refer to the `Generic Installation Notes`_ chapter or to each individual product
@@ -158,12 +159,12 @@ documentation.
 Software
 --------
 
-XDC-1 software can be downloaded from `eXtreme-DataCloud repositories <http://repo.indigo-datacloud.eu/repository/xdc/>`__.
+XDC-2 software can be downloaded from `eXtreme-DataCloud repositories <http://repo.indigo-datacloud.eu/repository/xdc/>`__.
 
 Documentation
 -------------
 
-Please find XDC-1 documentation `here <https://releases.extreme-datacloud.eu/>`__.
+Please find XDC-2 documentation `here <https://releases.extreme-datacloud.eu/>`__.
 
 Support
 -------

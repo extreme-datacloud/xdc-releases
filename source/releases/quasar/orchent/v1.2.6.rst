@@ -9,24 +9,23 @@ The new version provides a couple of new features and improvements.
 List of RfCs
 ~~~~~~~~~~~~
 
-*  New features:
-
-   *  Added showconf command: it returns the output of the REST call to the new /configuration Orchestrator endpoint
-   * Added verbose option for depshow command (default is fals
+-  New features:
+  - Added showconf command: it returns the output of the REST call to the new /configuration Orchestrator endpoint
+  - Added verbose option for depshow command (default is false)
 
 Known Issues
 ~~~~~~~~~~~~
 
-* None
+- None
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
-* CentOS-7 RPMS
-    * `orchent-1.2.6.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/orchent.html>`_
+- CentOS-7 RPMS
+  - `orchent-1.2.6.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/orchent.html>`_
 
-* Ubuntu 16.04 DEBS
-    * `orchent-1.2.6_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/orchent_1.2.6_amd64.deb>`_
+- Ubuntu 16.04 DEBS
+  - `orchent-1.2.6_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/orchent_1.2.6_amd64.deb>`_
 
-* Docker Container:
-    * `indigodatacloud/orchent <https://hub.docker.com/r/indigodatacloud/orchent/tags/>`__:XDC-2 (signed)
-    * `indigodatacloud/orchent <https://hub.docker.com/r/indigodatacloud/orchent/tags/>`__:1.2.6
+- Docker Container:
+  -  `indigodatacloud/orchent <https://hub.docker.com/r/indigodatacloud/orchent/tags/>`__:XDC-2 (signed)
+  - `indigodatacloud/orchent <https://hub.docker.com/r/indigodatacloud/orchent/tags/>`__:1.2.6

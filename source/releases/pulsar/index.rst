@@ -104,41 +104,41 @@ The packages repositories have the following structure:
 
 * XDC **production** (stable):
 
-  * `xdc/production/{1,2}/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
-  * `xdc/production/{1,2}/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
+  * `xdc/production/1/centos7/x86_64/{base|updates} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/base/repoview/>`_
+  * `xdc/production/1/ubuntu/dists/xenial/main/{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/>`_
 
     * containing signed, well tested software components
 
   * third-party:
 
-    * `xdc/production/{1,2}/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview>`_
-    * `xdc/production/{1,2}/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
+    * `xdc/production/1/centos7/x86_64/third-party <http://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/third-party/repoview>`_
+    * `xdc/production/1/ubuntu/dists/xenial/third-party{binary-amd64,source} <http://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/third-party>`_
 
       * containing packages that are not part of eXtreme DataCloud, or not part of the base OS or EPEL, but used as dependencies by other eXtreme DataCloud components
 
-* XDC **testing**: `xdc/testing/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
+* XDC **testing**: `xdc/testing/1/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/testing/>`_
 
   * containing packages that will become part of the next stable distribution; in the certification and validation phase.
 
-* XDC **preview**: `xdc/preview/{1,2}/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
+* XDC **preview**: `xdc/preview/1/{centos7,ubuntu}/ <http://repo.indigo-datacloud.eu/repository/xdc/preview/>`_
 
   * containing signed packages that will become part of the next stable update, available for technical-previews
 
 All signed packages use the INDIGO - DataCloud gpg key. The public
 key can be downloaded from
-`here <http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc>`__,
+`here <http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc>`_,
 and the fingerprint from
-`here <http://repo.indigo-datacloud.eu/repository/INDIGODC_key_fingerprint.asc>`__.
+`here <http://repo.indigo-datacloud.eu/repository/INDIGODC_key_fingerprint.asc>`_.
 
 It is strongly recommended the use of the lastest version of the
 xdc-release packages containing the public key and the YUM and APT
 repository files.
 
-On the `DockerHub Registry <https://hub.docker.com/>`__, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
+On the `DockerHub Registry <https://hub.docker.com/>`_, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
 
--  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/dashboard/>`__,
+-  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/dashboard/>`_,
    
--  `xdc <https://hub.docker.com/u/extremedatacloud/dashboard/>`__
+-  `xdc <https://hub.docker.com/u/extremedatacloud/dashboard/>`_
 
 Containers present in those repositories and released in XDC-1 are
 tagged with “XDC-1” tag and signed, leveraging the Docker’s trust
@@ -151,12 +151,12 @@ documentation.
 Software
 --------
 
-XDC-1 software can be downloaded from `eXtreme-DataCloud repositories <http://repo.indigo-datacloud.eu/repository/xdc/>`__.
+XDC-1 software can be downloaded from `eXtreme-DataCloud repositories <http://repo.indigo-datacloud.eu/repository/xdc/>`_.
 
 Documentation
 -------------
 
-Please find XDC-1 documentation `here <https://releases.extreme-datacloud.eu/>`__.
+Please find XDC-1 documentation `here <https://releases.extreme-datacloud.eu/>`_.
 
 Support
 -------
