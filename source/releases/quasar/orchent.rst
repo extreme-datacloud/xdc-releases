@@ -21,7 +21,7 @@ Documentation
 
 Detailed documentation is available at:
 
-* `GitHub README <https://github.com/indigo-dc/orchent/blob/1.2.2/README.md>`_
+* `GitHub README <https://github.com/indigo-dc/orchent/blob/1.2.6/README.md>`_
 * `GitBook Guides <https://indigo-dc.gitbooks.io/orchent/content/>`_
 
 Support
