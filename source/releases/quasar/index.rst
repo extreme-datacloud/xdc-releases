@@ -18,7 +18,7 @@ Included components
    rucio 
    onedata
    paas-orchestrator
-   orchestrator-dashboard
+   paas-dashboard
    orchent
    ttt
 
