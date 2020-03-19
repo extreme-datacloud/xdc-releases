@@ -14,10 +14,6 @@ scientific domain (e.g., HEP, astronomy, biology).
 Through the XDC project new features are added like the **adoption of a token based 
 approach to authentication & authorisation for data management with Rucio**.
 
-
- `PaaS Orchestrator <https://indigo-dc.gitbooks.io/indigo-paas-orchestrator/content/>`_ in a fast and easy way.
-
-
 Release Notes
 -------------
 
