@@ -4,9 +4,9 @@ v1.5.0
 What’s new
 ~~~~~~~~~~
 
-* "Fourth party copy" - dynafed can function as the active party for data distribution. 
-This enables services without third party copy support (such as S3) to participate fully 
-in the data distribution infrastructure.
+- "Fourth party copy" - dynafed can function as the active party for data distribution. 
+  This enables services without third party copy support (such as S3) to participate fully 
+  in the data distribution infrastructure.
 
 List of RfCs
 ~~~~~~~~~~~~
@@ -20,7 +20,7 @@ Known Issues
 Installation methods
 ~~~~~~~~~~~~~~~~~~~~
 
-* deployment explined in the `CachingOnDemand guide <http://lcgdm.web.cern.ch/dynafeds-text-documentation-white-paper>`_
+* deployment explained in the `Dynafed setup guide <http://lcgdm.web.cern.ch/dynafed-introduction-and-setup>`_
 
 
 List of Artifacts

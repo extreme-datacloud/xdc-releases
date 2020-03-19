@@ -28,7 +28,7 @@ Key technical highlights
 
 - CachingOnDemand
 
-  - improved Ansible recipes and new Ansible tasks for kubernetes and Centos7 baremetal
+  - improved Ansible recipes and new Ansible tasks for Kubernetes and Centos7 baremetal
 
 - Dynafed
 
