@@ -34,7 +34,7 @@ Key technical highlights
 
   - Dynafed can now function as the active party for data distribution, having enabled the "Fourth party copy" feature. 
     This allows services without third party copy support (such as S3) to participate fully in the data distribution infrastructure.
-    
+
 - EOS
 
   - Many improvements and features on the QoS classes
@@ -63,7 +63,7 @@ Key technical highlights
 -  PaaS Orchestrator Dashboard
 
   - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly 
-    deploy desired workflows and infratructures
+    deploy desired workflows and infrastructures
 
 - Rucio
 
