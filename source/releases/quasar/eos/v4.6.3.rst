@@ -48,15 +48,15 @@ Installation methods
 ~~~~~~~~~~~~~~~~~~~~
 
 Installation (same as updating) is done via RPM package managers.
-* Same `installation guidelines <https://eos-docs.web.cern.ch/eos-docs/quickstart/install.html>`_ as for the general release of EOS apply
-* The `XDC repository <https://repo.indigo-datacloud.eu/repository/xdc/production/2/>`_ must be used
+- Same `installation guidelines <https://eos-docs.web.cern.ch/eos-docs/quickstart/install.html>`_ as for the general release of EOS apply
+  - The `XDC repository <https://repo.indigo-datacloud.eu/repository/xdc/production/2/>`_ must be used
 
 Configuration
 ~~~~~~~~~~~~~
 
-For XDC release 2, EOS using QuarkDB config is needed:
-* To start a QuarkDB server, refer to the following: https://eos-docs.web.cern.ch/eos-docs/configuration/quarkdb.html
-* To setup EOS to use QuarkDB config, refer the following: https://eos-docs.web.cern.ch/eos-docs/configuration/master_quarkdb.html
+For XDC-2, EOS using QuarkDB config is needed:
+- To start a QuarkDB server, refer to the following: https://eos-docs.web.cern.ch/eos-docs/configuration/quarkdb.html
+- To setup EOS to use QuarkDB config, refer the following: https://eos-docs.web.cern.ch/eos-docs/configuration/master_quarkdb.html
 
 
 List of Artifacts
