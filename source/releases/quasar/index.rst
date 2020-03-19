@@ -52,6 +52,7 @@ Key technical highlights
     - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
     - the redesign of the changes stream API, to allow more fine-grained control over the stream
 
+
 -  PaaS Orchestrator plugin
 
   - Implementation of timeout for deployment creation/update and credentials management for 
