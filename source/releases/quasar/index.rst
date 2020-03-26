@@ -53,7 +53,7 @@ Key technical highlights
     - the redesign of the changes stream API, to allow more fine-grained control over the stream
 
 
--  PaaS Orchestrator plugin
+-  PaaS Orchestrator
 
   - Implementation of timeout for deployment creation/update and credentials management for 
     providers not integrated with IAM
@@ -63,8 +63,7 @@ Key technical highlights
 
 -  PaaS Orchestrator Dashboard
 
-  - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly 
-    deploy desired workflows and infrastructures
+  - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly deploy desired workflows and infrastructures
 
 - Rucio
 
