@@ -1,0 +1,105 @@
+v1.22.0rc2
+------------
+
+What’s new
+~~~~~~~~~~
+
+Rucio authentication and authorization mechanism was extended to support (JWT) tokens 
+using Open ID Connect protocol (following `the OAuth 2.0 specifications <https://oauth.net/2/>`_). 
+The `implementation <https://github.com/gumond/rucio/tree/feature-2612-OIDC-AuthZN-base-next>`_)is based 
+on `pyoidc <https://github.com/OpenIDC/pyoidc>`_ (OIDC `certified <https://openid.net/developers/certified/>`_) library and it follows the WLCG 
+specifications documented `here <https://docs.google.com/document/d/1hnsPWf9C7ODVXZ7JehsSEiEsQwf5UmqLfTwVDhuqHzk/edit#>`_ (subject to certain changes as these specifications 
+are currently still being developed). 
+
+To perform operations with Rucio a user can now newly log in via 
+an `authorization code grant <https://oauth.net/2/grant-types/authorization-code/>`_ mechanism. 
+This has been made possible via Rucio WebUI, and Rucio command line interface (CLI). 3 CLI login strategies were 
+implemented to serve various use cases.  
+
+Rucio REST API can also accept JWT tokens issued by Identity Providers out of the Rucio 
+authorization code grant flow. Such JWT tokens can serve as means of authentication 
+and authorization if they contain the required minimal scope and audience in their 
+claims, are valid and their identity is known to Rucio. In order to allow permission 
+control downstream (Rucio → FTS3) Rucio implemented also an internal mechanism using 
+token exchange and token refresh grants. 
+
+Rucio user pre-provisioning (via new Rucio SCIM client) was 
+`implemented <https://github.com/rucio/probes/pull/11>`_ as a ‘Rucio probe’ script. 
+In order to manage token life-cycle, a new Rucio daemon was implemented taking care of 
+token deletion, token refresh and clean-up of expired authentication OIDC sessions. 
+Rucio DB schema was extended to contain: necessary new columns in the ‘tokens’ table 
+and a new table ‘oauth_requests’ to handle OIDC authentication sessions.  
+
+First functional tests of a third party copy were performed (Rucio → FTS3 → dCache) 
+and a new `Rucio testbed instance <https://90.147.102.221/ui/>`_ is being setup.
+
+List of RfCs
+~~~~~~~~~~~~
+
+- Features
+
+  -  `#2612 <https://github.com/rucio/rucio/issues/2612>`_ - Authentication & Authorisation: Rucio user authentication via OIDC protocol (XDC IAM), getting user info and JWT tokens
+  - `#2412 <https://github.com/rucio/rucio/issues/2412>`_ - Deletion: Reaper 2.0 #2412
+  - `#3348 <https://github.com/rucio/rucio/issues/3348>`_ - Release management: Add oidc auth templates to setup.py #3348
+  - `#533 <https://github.com/rucio/rucio/issues/533>`_ - Release management: Better way to deal with configuration / permissions / policy #533
+
+- Enhancements
+
+  - `#1637 <https://github.com/rucio/rucio/issues/1637>`_ - Deletion: Protection of sources too strict in the reaper #1637
+
+- Bugs fixes
+
+  - `#3337 <https://github.com/rucio/rucio/issues/3337>`_ -Authentication & Authorisation: Fixes to OIDC AuthN/Z after first deployment on a testbed #3337
+
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+
+- for Rucio-server follow `Installing Rucio server guide <https://rucio.readthedocs.io/en/latest/installing_server.html>`_
+
+  - via pip
+
+  .. code-block:: bash
+
+    # pip install rucio
+
+  - via docker
+  .. code-block:: bash
+    # docker run --name=rucio-server -p 80:80 -d indigodatacloud/rucio-server:XDC-2
+
+  - for more options see above documentation
+
+- for Rucio-daemons follow `Installing Rucio daemons guide <https://rucio.readthedocs.io/en/latest/installing_daemons.html>`_
+
+  - via pip
+  .. code-block:: bash
+
+    # pip install rucio
+
+  - via docker
+  .. code-block:: bash
+
+    # docker run --name=rucio-server -p 80:80 -d indigodatacloud/rucio-server:XDC-2
+
+  - for more options see above documentation.
+
+Known Issues
+~~~~~~~~~~~~
+
+- N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+
+- Source tarballs
+  - `rucio-1.22.0rc2.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/rucio-1.22.0rc2.tar.gz>`_
+  
+
+- Docker Container:
+  - `indigodatacloud/rucio-server:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/XDC-2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__ (signed)
+  - `indigodatacloud/rucio-daemons:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/XDC-2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__ (signed)
+  - `indigodatacloud/rucio-server:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/release-1.22.0rc2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__
+  - `indigodatacloud/rucio-daemons:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/release-1.22.0rc2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__
+
+
+
+

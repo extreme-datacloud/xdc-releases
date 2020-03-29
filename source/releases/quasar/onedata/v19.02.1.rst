@@ -1,0 +1,118 @@
+v19.02.1
+------------
+
+What’s new
+~~~~~~~~~~
+
+The new versions provides many improvemenets and new features, and in particular in the
+context of the XDC project in order to support some of the use-cases:
+
+- improvement of *ls° operations in oneclient to provide better performance when there are many (>10k) files in a single directory.
+- release of python bindings for onedata in a form of onedataFS (https://github.com/onedata/fs-onedatafs), allowed to greatly simplify and improve performance of programmatic operations on data located in Onedata space.
+- specifficaly for the ECRIN use case:
+  - improvement of file indexing performance for scanning a 800k dataset 
+    provided by ECRIN
+- specifficaly for the CTA use case:
+  - the redesign of the changes stream API, to allow more fine-grained control over the steam, 
+    that benefits in faster changes stream, and less stress put on a oneprovider instance.
+
+
+List of RfCs
+~~~~~~~~~~~~
+- Oneclient:
+
+  - VFS-5826 Increased events test connections
+  - VFS-5826 Added opendir and releasedir to OnedataFS
+    - Increased default metadata cache size
+    - Added support for opendir and releasedir
+    - Added persistent directory cache
+    - Added directory subscription cancelling
+  - VFS-5844 Refactored metadatacache to limit file subscriptions
+  - VFS-5965 Added option to emulate large available space
+
+- Oneprovider:
+
+  - op-worker
+    - VFS-5826 Ensure db start at cluster init
+      - Add missing event during dir creation
+      - Add events during file creation
+      - Change max_read_dir_plus_procs value
+      - Emmit attr_changed events on chmod and acl change
+      - Change events processing - allow subscriptions per dir 
+
+- Onezone:
+
+  - oz-worker
+    - VFS-5936 Improve entitlement mapping
+      - Merge entitlements with different roles (privileges) to the highest of them
+      - Store previous privileges to discover and coalesce later changes in user roles
+    - VFS-5940 Rename GUI package verification envs to more intuitive
+    - VFS-5205 Hide share CREATE and DELETE operations from Onezone REST API (as they 
+      are reserved for Oneprovider logic), return rootFileId as ObjectID in share details
+  - onepanel
+    - VFS-5994 Make 'production' Let's Encrypt mode the default
+    - VFS-5940 Rename oz-worker's GUI package verification envs to more intuitive
+
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+
+- Detailed documentation on the Onedata platform installation is available at:
+  - `Oneprovider Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/deployment_tutorial.html>`_ 
+  - `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial.html>`_ 
+- Detailed documentation on the Onedata platform Updgrade is available at:
+  - `Oneprovider Upgrade <https://onedata.org/#/home/documentation/doc/administering_onedata/oneprovider_tutorial[upgrading].html>`_ 
+  - `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial[upgrading].html>`_ 
+
+Known Issues
+~~~~~~~~~~~~
+
+- N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+
+- Dedicated scripts for:
+  - ECRON use case: `Metadata ingestion while traversing a space <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/space-traverse>`_
+  - CTA use case: `Metadata ingestion from the space changes stream <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/changes-stream>`_
+
+- CentOS-7 RPMS - version 19.02.1
+
+  - `cluster-manager <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/cluster-manager.html>`_
+  - `oneclient <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/oneclient.html>`_
+  - `oneprovider <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/oneprovider.html>`_
+  - `onezone <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/onezone.html>`_
+  - `op-panel <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/op-panel.html>`_
+  - `op-worker <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/op-worker.html>`_
+  - `oz-panel <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/oz-panel.html>`_
+  - `oz-worker <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/oz-worker.html>`_
+
+- Ubuntu 16.04
+
+  - `cluster-manager_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/cluster-manager_19.02.1-1~xenial_amd64.deb>`_
+  - `oneclient_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oneclient_19.02.1-1~xenial_amd64.deb>`_
+  - `oneprovider_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oneprovider_19.02.1-1~xenial_amd64.deb>`_
+  - `onezone_onezone_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/onezone_onezone_19.02.1-1~xenial_amd64.deb>`_
+  - `op-panel_op-panel_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/op-panel_op-panel_19.02.1-1~xenial_amd64.deb>`_
+  - `op-worker_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/op-worker_19.02.1-1~xenial_amd64.deb>`_
+  - `oz-panel_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oz-panel_19.02.1-1~xenial_amd64.deb>`_
+  - `oz-worker_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oz-worker_19.02.1-1~xenial_amd64.deb>`_
+
+- Ubuntu 18.04
+
+  - `cluster-manager_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/cluster-manager_19.02.1-1~bionic_amd64.deb>`_
+  - `oneclient_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oneclient_19.02.1-1~bionic_amd64.deb>`_
+  - `oneprovider_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oneprovider_19.02.1-1~bionic_amd64.deb>`_
+  - `onezone_onezone_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/onezone_onezone_19.02.1-1~bionic_amd64.deb>`_
+  - `op-panel_op-panel_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/op-panel_op-panel_19.02.1-1~bionic_amd64.deb>`_
+  - `op-worker_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/op-worker_19.02.1-1~bionic_amd64.deb>`_
+  - `oz-panel_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oz-panel_19.02.1-1~bionic_amd64.deb>`_
+  - `oz-worker_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oz-worker_19.02.1-1~bionic_amd64.deb>`_
+
+- Docker Container
+
+  - `indigodatacloud/onezone:XDC-2 <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_(signed)
+  - `indigodatacloud/onezone:19.02.1 <https://hub.docker.com/layers/indigodatacloud/oneclient/19.02.1/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_
+  - `indigodatacloud/oneprovider:XDC-2 <https://hub.docker.com/layers/indigodatacloud/oneprovider/XDC-2/images/sha256-1968838645b5aaab1d487f2ba55997c64b703c35734bc88f5fcb340986ae8b4b?context=repo>`_(signed)
+  - `indigodatacloud/oneprovider:19.02.1-1 <https://hub.docker.com/layers/indigodatacloud/oneprovider/19.02.1/images/sha256-1968838645b5aaab1d487f2ba55997c64b703c35734bc88f5fcb340986ae8b4b?context=repo>`_
+  - `indigodatacloud/oneclient:XDC-2  <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_(signed)
+  - `indigodatacloud/oneclient:19.02.1-1 <https://hub.docker.com/layers/indigodatacloud/oneclient/19.02.1/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_

@@ -1,0 +1,66 @@
+v.4.0.1
+-------
+
+What’s new
+~~~~~~~~~~
+
+This version provides many new features, improvements and 
+bug fixes both in TOSCA types and templates
+
+List of RfCs
+~~~~~~~~~~~~
+
+- TOSCA types: - Tested with **Ansible 2.6.20**
+
+  - New features:
+
+    - Added types for BlockStorage and for AttachesTo relationship
+    - Added types for Elasticsearch and Kibana
+
+  - Improvements
+    - Improved artifacts for Kubernetes
+
+- TOSCA templates
+
+  - New features and improvements:
+
+    - Updated templates to ensure the compliance with Simple Profile in YAML 1.0
+
+      - these changes are mandatory for working with **Orchestrator version >= 2.2.0**
+
+    - Fixing typos (e.g. priviliged --> privileged)
+    - Deleted obsolete templates
+    - Deleted templates with hard-coded values for SLAs
+    - Added templates for the LifeWatch use-case
+ 
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+
+- TOSCA types are used by the PaaS Orchestrator - more details are available at:
+
+  - `Brief guide to TOSCA <https://github.com/indigo-dc/tosca-templates/blob/master/doc/tosca.md>`_
+  - `TOSCA types README <https://github.com/indigo-dc/tosca-types/blob/master/README.md>`_
+
+- TOSCA templates are used by the PaaS Orchestrator Dashboard and directly bu users through CLIs 
+  like orchent - more details are available at:
+
+  - `TOSCA templates README <https://github.com/indigo-dc/tosca-templates/blob/master/README.md>`_
+  - `How to deploy a TOSCA Template <https://github.com/indigo-dc/tosca-templates/blob/master/doc/tosca-deploy.md>`_
+
+Known Issues
+~~~~~~~~~~~~
+
+- N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+
+- Tarballs:
+
+  - `tosca-types-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/2/centos7/x86_64/tgz/tosca-types-v4.0.1.tar.gz>`_
+  - `tosca-templates-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/2/centos7/x86_64/tgz/tosca-templates-v4.0.1.tar.gz>`_
+
+- Source code:
+
+  - https://github.com/indigo-dc/tosca-types/tree/v4.0.1
+  - https://github.com/indigo-dc/tosca-templates/tree/v4.0.1

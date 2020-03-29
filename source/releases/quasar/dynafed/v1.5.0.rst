@@ -1,0 +1,38 @@
+######
+v1.5.0
+######
+
+What’s new
+==========
+
+- "Fourth party copy" - dynafed can function as the active party for data distribution. 
+  This enables services without third party copy support (such as S3) to participate fully 
+  in the data distribution infrastructure.
+
+List of RfCs
+============
+- `XSD-196 <https://jira.extreme-datacloud.eu/browse/XSD-196>`_ - Dynafed - function as a "fourth party copy" agent
+
+Known Issues
+==========
+
+- N/A
+
+Installation methods
+====================
+
+- deployment explained in the `Dynafed setup guide <http://lcgdm.web.cern.ch/dynafed-introduction-and-setup>`_
+
+
+List of Artifacts
+=================
+
+- CentOS-7 RPMS - in group `applications/internet <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/applications.internet.group.html>`_
+
+  - dynafed - Ultra-scalable dynamic system for federating HTTP-based storage resources
+  - dynafed-dmlite-frontend - dmlite plugin for dynafed
+  - dynafed-dmlite-plugin - dmlite plugin for dynafed
+  - dynafed-http-plugin - Http and WebDav plugin for dynafed
+  - dynafed-lfc-plugin - Logical File catalog (LFC) plugin for dynafed
+  - dynafed-private-devel - Development files for dynafed
+  - dynafed-tpc-gfal2 - Third party copy (TPC) scripts using gfal2 for dynafed  
