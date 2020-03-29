@@ -54,6 +54,7 @@ Key technical highlights
     - the redesign of the changes stream API, to allow more fine-grained control over the stream
 
 - PaaS Orchestrator
+
   - Implementation of timeout for deployment creation/update and credentials management for 
     providers not integrated with IAM
   - Added credentials management for providers not integrated with INDIGO IAM
