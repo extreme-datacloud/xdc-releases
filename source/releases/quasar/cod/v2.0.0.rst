@@ -12,7 +12,7 @@ List of RfCs
 ~~~~~~~~~~~~
 * vagrant available for:
    * testing on k8s+helm
-   ansible dev test
+   * ansible dev test
 * ansible tasks for kubernetes and Centos7 baremetal (travis automated) now ready
 * additional config parameters included in ansible recipes
 * updated makefile for helm and ansible automatic updates
@@ -25,7 +25,7 @@ Known Issues
 Installation methods
 ~~~~~~~~~~~~~~~~~~~~
 
-* automatic deployment through Ansible as describe in the `CachingOnDemand guide <https://cloud-pg.github.io/CachingOnDemand/>`_
+* automatic deployment using Ansible as describe in the `CachingOnDemand guide <https://cloud-pg.github.io/CachingOnDemand/>`_
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~

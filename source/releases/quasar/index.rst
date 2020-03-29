@@ -82,12 +82,12 @@ Release Notes
 
 The XDC-2 (Quasar) release consists in 9 Products:
 
--  XXX OS packages
+-  77 OS packages
 
-   -  Y RPMS & SRPMS, and tarballs
-   -  Z binary & source DEBS
+   -  47 RPMS, SRPMS, and tarballs
+   -  35 binary & source DEBS
 
--  7 Docker containers
+-  8 Docker containers
 
 The release is fully supported 
 - on the following Operating Systems platforms: 
@@ -143,14 +143,14 @@ repository files.
 
 On the `DockerHub Registry <https://hub.docker.com/>`__, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
 
--  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/dashboard/>`__,
+-  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/>`__,
    
--  `xdc <https://hub.docker.com/u/extremedatacloud/dashboard/>`__
+-  `xdc <https://hub.docker.com/u/extremedatacloud/>`__
 
 Containers present in those repositories and released in XDC-2 are
 tagged with “XDC-2” tag and signed, leveraging the Docker’s trust features so that users can pull trusted images.
 
-To understand how to install and configure XDC-1/Pulsar services and
+To understand how to install and configure XDC-2 (codename Quasar) services and
 components either refer to the `Generic Installation Notes`_ chapter or to each individual product
 documentation.
 

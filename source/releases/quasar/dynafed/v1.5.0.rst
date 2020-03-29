@@ -32,4 +32,5 @@ List of Artifacts
    * dynafed-dmlite-plugin - dmlite plugin for dynafed
    * dynafed-http-plugin - Http and WebDav plugin for dynafed
    * dynafed-lfc-plugin - Logical File catalog (LFC) plugin for dynafed
-   * dynafed-private-devel - Development files for dynafed 
+   * dynafed-private-devel - Development files for dynafed
+   * dynafed-tpc-gfal2 - Third party copy (TPC) scripts using gfal2 for dynafed  

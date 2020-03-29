@@ -12,7 +12,7 @@ List of RfCs
 
 - TOSCA types: - Tested with **Ansible 2.6.20**
   - New features:
-    -  Added types for BlockStorage and for AttachesTo relationship
+    - Added types for BlockStorage and for AttachesTo relationship
     - Added types for Elasticsearch and Kibana
   - Improvements
     - Improved artifacts for Kubernetes
@@ -44,5 +44,8 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 - Tarballs:
-  - `tosca-types-4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/1/centos7/x86_64/tgz/tosca-types-3.0.0.tar.gz>`_
-  - `tosca-templates-4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/1/centos7/x86_64/tgz/tosca-templates-3.0.0.tar.gz>`_
+  - `tosca-types-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/2/centos7/x86_64/tgz/tosca-types-v4.0.1.tar.gz>`_
+  - `tosca-templates-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/2/centos7/x86_64/tgz/tosca-templates-v4.0.1.tar.gz>`_
+- Source code:
+  - https://github.com/indigo-dc/tosca-types/tree/v4.0.1
+  - https://github.com/indigo-dc/tosca-templates/tree/v4.0.1

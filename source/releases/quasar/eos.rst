@@ -36,7 +36,11 @@ Detailed documentation is available at:
 Deployment automation:
 ----------------------
 
-Puppt modules available for:
+**Important note**:
+* For packages insallation it is important to enable not only the XDC repositories, through the use of
+  the xdc-release-2.0.0-1 package, but also the EOS dependencies repository `eos-deps.repo <https://repo.indigo-datacloud.eu/repository/xdc/repos/eos-deps.repo>`_
+
+Puppet modules are available for:
 
 * EOS server module: https://gitlab.cern.ch/ai/it-puppet-module-eosserver/
 * Example files for setting up the namespace node and the storage node:

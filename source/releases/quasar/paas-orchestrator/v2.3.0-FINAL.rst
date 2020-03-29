@@ -57,5 +57,5 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 - Docker Container:
-  - `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`_:XDC-2 (signed)
-  - `indigodatacloud/orchestrator <https://hub.docker.com/r/indigodatacloud/orchestrator/tags/>`_:2.3.0-FINAL
+  - `indigodatacloud/orchestrator:XDC-2 <https://hub.docker.com/layers/indigodatacloud/orchestrator/XDC-2/images/sha256-150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772?context=repo>`_(signed)
+  - `indigodatacloud/orchestrator:2.3.0-FINAL <https://hub.docker.com/layers/indigodatacloud/orchestrator/2.3.0-final/images/sha256-150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772?context=repo>`_

@@ -1,4 +1,4 @@
-v1.22.0
+v1.22.0rc2
 ------------
 
 What’s new
@@ -83,14 +83,14 @@ List of Artifacts
 ~~~~~~~~~~~~~~~~~
 
 * Source tarballs
-    * `rucio-1.22.0.dev3.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/rucio-1.22.0.dev3.tar.gz>`_
+    * `rucio-1.22.0rc2.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/rucio-1.22.0rc2.tar.gz>`_
   
 
 * Docker Container:
-    * `indigodatacloud/rucio-server:XDC-2 <https://hub.docker.com/r/indigodatacloud/rucio/tags/>`__ (signed)
-    * `indigodatacloud/rucio-daemon:XDC-2 <https://hub.docker.com/r/indigodatacloud/rucio/tags/>`__ (signed)
-    * `indigodatacloud/rucio-server:release-1.22.0.dev3 <https://hub.docker.com/layers/rucio/rucio-server/release-1.22.0.dev3/images/sha256-3b290c69f8db5241406974e74a08696e9114e2e490f6c899c2837527259976af?context=explore>`__
-    * `indigodatacloud/rucio-daemons:release-1.22.0.dev3 <https://hub.docker.com/layers/rucio/rucio-daemons/release-1.22.0.dev3/images/sha256-faec2dec3f83c4db21319c3c219c00f40dbd290ae3e8af6bf69d13a95f5816c9?context=explore>`__
+    * `indigodatacloud/rucio-server:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/XDC-2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__ (signed)
+    * `indigodatacloud/rucio-daemons:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/XDC-2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__ (signed)
+    * `indigodatacloud/rucio-server:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/release-1.22.0rc2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__
+    * `indigodatacloud/rucio-daemons:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/release-1.22.0rc2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__
 
 
 

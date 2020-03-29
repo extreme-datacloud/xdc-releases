@@ -72,17 +72,14 @@ List of Artifacts
     * eos-fuse-core - The EOS fuse client
     * eos-fuse-sysv - The EOS fuse client
     * eos-fusex - The new EOS fuse client
+    * eos-fusex-cern-autofs - The autofs mounter for CERN EOS user/project mounting
     * eos-fusex-core - The new EOS fuse client
     * eos-fusex-selinux - The new EOS fuse client selinux configuration
+    * eos-ns-inspect - EOS namespace inspection tool for instance administrators 
     * eos-server - The EOS server installation
     * eos-srm - The EOS srm script package for checksumming and space
     * eos-test - The EOS test package
     * eos-testkeytab - The EOS testkeytab package
-
-
-  * in `applications/internet <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/applications.internet.group.html>`_
-
-    * eos-admin-gui - Web Interface for EOS administration 
 
   * in `Development/Debug <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/development.debug.group.html>`_
 
