@@ -6,7 +6,8 @@ What’s new
 
 The new versions provides many improvemenets and new features, and in particular in the
 context of the XDC project in order to support some of the use-cases:
-- improvement of 'ls' operations in oneclient to provide better performance when there are many (>10k) files in a single directory.
+
+- improvement of *ls° operations in oneclient to provide better performance when there are many (>10k) files in a single directory.
 - release of python bindings for onedata in a form of onedataFS (https://github.com/onedata/fs-onedatafs), allowed to greatly simplify and improve performance of programmatic operations on data located in Onedata space.
 - specifficaly for the ECRIN use case:
   - improvement of file indexing performance for scanning a 800k dataset 
@@ -28,7 +29,6 @@ List of RfCs
     - Added directory subscription cancelling
   - VFS-5844 Refactored metadatacache to limit file subscriptions
   - VFS-5965 Added option to emulate large available space
-
 
 - Oneprovider:
 

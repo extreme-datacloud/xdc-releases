@@ -10,6 +10,7 @@ List of RfCs
 ~~~~~~~~~~~~
 
 - Important Functionalities:
+
   - IAM authentication
   - Display user's deployments
   - Display deployment details, template and log
@@ -17,19 +18,24 @@ List of RfCs
   - Create new deployment
 
 - New features:
+
   - allowed_group in template metadata can be used to control the access to the templates
     monitoring information displayed for each resource provider service
   - Vault integration: users can manage their credentials for services that are not 
     integrated with INDIGO IAM storing them in Vault
+
     - new parameters added in the configuration to enable the Vault integration (VAUL_URL, VAULT_ROLE, VAULT_OIDC_AUDIENCE)
+  
   - deployment creation timeout can be set from the Advanced tab panel when configuring 
     the deployment
 
 - Improvements
+
   - Improved deployment outputs view
   - Improved SLA view (menu and page renamed in "Resource Providers")
 
 - Bug fixed:
+
   - Parameters are now correctly set in the Orchestrator POST request (e.g. keepLastAttempt, maxProvidersRetry) 
 
 Known Issues
@@ -41,11 +47,13 @@ Installation methods
 ~~~~~~~~~~~~~~~~~~~~
 
 - automatic deployment by using the Docker image
+
   - See documentation at: `PaaS Orchestrator Dashboard README <https://github.com/indigo-dc/orchestrator-dashboard/blob/v1.1.0/README.md>`_
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 
 - Docker image:
+
   - `orchestrator-dashboard:XDC-2 (signed) <https://hub.docker.com/layers/indigodatacloud/orchestrator-dashboard/XDC-2/images/sha256-6fcda9f1c81aec920e0e05d817e11a64284d49597bfe5d1e86e69a9e0522f009?context=repo>`_
   - `orchestrator-dashboard:v1.1.0 <https://hub.docker.com/layers/indigodatacloud/orchestrator-dashboard/v1.1.0/images/sha256-6fcda9f1c81aec920e0e05d817e11a64284d49597bfe5d1e86e69a9e0522f009?context=explore>`_

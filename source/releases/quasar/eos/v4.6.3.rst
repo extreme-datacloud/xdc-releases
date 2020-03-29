@@ -4,39 +4,39 @@ v4.6.3
 What’s new
 ~~~~~~~~~~
 
-* QoS classes
-  * Addition of QoS classes and QoS API when interacting with namespace entries.
-    * An administrator of the system may define QoS classes, which are composed of a 
-    set of storage properties and allowed QoS transitions.
-    * Using the CLI interface (or via HTTP calls), a client may query the QoS class 
-    of an entry or request a QoS transition.
-    * QoS classes for a particular entry are identified at runtime.
-  * CDMI gateway for QoS transitions
-    * Requires the cdmi-eos-qos plugin for the CDMI server
-  * Converter engine
-    * The converter engine is composed of two main components: Converter Driver and 
-    Converter Scanner.
-    * The Converter Driver has been reworked using a threadpool approach and saving 
-    the information in persistent storage (QuarkDB implementation). 
-    This allows persistence (in case of an MGM shutdown), as well as more flexibility 
-    over the conversion execution, such as runtime configurable threads and runtime 
-    statistics.
-  * Upcoming change:
-    * The Converter Scanner is a new component, using persistent storage as well, 
-    acting like a background daemon, which scans namespace entries and identifies 
-    files suitable for conversion, according to a given filter criteria.
+- QoS classes
+  - Addition of QoS classes and QoS API when interacting with namespace entries.
+    - An administrator of the system may define QoS classes, which are composed of a 
+      set of storage properties and allowed QoS transitions.
+    - Using the CLI interface (or via HTTP calls), a client may query the QoS class 
+      of an entry or request a QoS transition.
+    - QoS classes for a particular entry are identified at runtime.
+  - CDMI gateway for QoS transitions
+    - Requires the cdmi-eos-qos plugin for the CDMI server
+  - Converter engine
+    - The converter engine is composed of two main components: Converter Driver and 
+      Converter Scanner.
+    - The Converter Driver has been reworked using a threadpool approach and saving 
+      the information in persistent storage (QuarkDB implementation). 
+      This allows persistence (in case of an MGM shutdown), as well as more flexibility 
+      over the conversion execution, such as runtime configurable threads and runtime 
+      statistics.
+  - Upcoming change:
+    - The Converter Scanner is a new component, using persistent storage as well, 
+      acting like a background daemon, which scans namespace entries and identifies 
+      files suitable for conversion, according to a given filter criteria.
 
 
 List of RfCs
 ~~~~~~~~~~~~
-* New features and improvements:
-  * `XSD-212 <https://jira.extreme-datacloud.eu/browse/XSD-212>`_ - Implement the EOS QoS query command, allowing a user to query the existing QoS of a given file
-  * `XSD-213 <https://jira.extreme-datacloud.eu/browse/XSD-213>`_ - Implement an EOS QoS native API
-  * `XSD-214 <https://jira.extreme-datacloud.eu/browse/XSD-214>`_ - Implement the EOS QoS set command, allowing a user to set the desired QoS property of a given file
-  * `XSD-215 <https://jira.extreme-datacloud.eu/browse/XSD-215>`_ - Provide EOS QoS HTTP REST Interface
-  * `XSD-217 <https://jira.extreme-datacloud.eu/browse/XSD-217>`_ - Mechanism to import a file into the EOS namespace
-  * `XSD-218 <https://jira.extreme-datacloud.eu/browse/XSD-218>`_ - VOMS security extractor for XrdHttp
-  * `XSD-219 <https://jira.extreme-datacloud.eu/browse/XSD-219>`_ - File traversal over HTTP
+- New features and improvements:
+  - `XSD-212 <https://jira.extreme-datacloud.eu/browse/XSD-212>`_ - Implement the EOS QoS query command, allowing a user to query the existing QoS of a given file
+  - `XSD-213 <https://jira.extreme-datacloud.eu/browse/XSD-213>`_ - Implement an EOS QoS native API
+  - `XSD-214 <https://jira.extreme-datacloud.eu/browse/XSD-214>`_ - Implement the EOS QoS set command, allowing a user to set the desired QoS property of a given file
+  - `XSD-215 <https://jira.extreme-datacloud.eu/browse/XSD-215>`_ - Provide EOS QoS HTTP REST Interface
+  - `XSD-217 <https://jira.extreme-datacloud.eu/browse/XSD-217>`_ - Mechanism to import a file into the EOS namespace
+  - `XSD-218 <https://jira.extreme-datacloud.eu/browse/XSD-218>`_ - VOMS security extractor for XrdHttp
+  - `XSD-219 <https://jira.extreme-datacloud.eu/browse/XSD-219>`_ - File traversal over HTTP
 
 
 Known Issues
@@ -61,32 +61,32 @@ For XDC-2, EOS using QuarkDB config is needed:
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
-* CentOS-7 RPMS
+- CentOS-7 RPMS
 
-  * in group `applications/file <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/applications.file.group.html>`_
+  - in group `applications/file <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/applications.file.group.html>`_
 
-    * eos-archive - The EOS archive daemon
-    * eos-cleanup - The EOS test package
-    * eos-client - The EOS shell client
-    * eos-fuse - The new EOS fuse client
-    * eos-fuse-core - The EOS fuse client
-    * eos-fuse-sysv - The EOS fuse client
-    * eos-fusex - The new EOS fuse client
-    * eos-fusex-cern-autofs - The autofs mounter for CERN EOS user/project mounting
-    * eos-fusex-core - The new EOS fuse client
-    * eos-fusex-selinux - The new EOS fuse client selinux configuration
-    * eos-ns-inspect - EOS namespace inspection tool for instance administrators 
-    * eos-server - The EOS server installation
-    * eos-srm - The EOS srm script package for checksumming and space
-    * eos-test - The EOS test package
-    * eos-testkeytab - The EOS testkeytab package
+    - eos-archive - The EOS archive daemon
+    - eos-cleanup - The EOS test package
+    - eos-client - The EOS shell client
+    - eos-fuse - The new EOS fuse client
+    - eos-fuse-core - The EOS fuse client
+    - eos-fuse-sysv - The EOS fuse client
+    - eos-fusex - The new EOS fuse client
+    - eos-fusex-cern-autofs - The autofs mounter for CERN EOS user/project mounting
+    - eos-fusex-core - The new EOS fuse client
+    - eos-fusex-selinux - The new EOS fuse client selinux configuration
+    - eos-ns-inspect - EOS namespace inspection tool for instance administrators 
+    - eos-server - The EOS server installation
+    - eos-srm - The EOS srm script package for checksumming and space
+    - eos-test - The EOS test package
+    - eos-testkeytab - The EOS testkeytab package
 
-  * in `Development/Debug <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/development.debug.group.html>`_
+  - in `Development/Debug <http://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/repoview/development.debug.group.html>`_
 
-    *  eos-debuginfo - Debug information for package eos 
+    - eos-debuginfo - Debug information for package eos 
 
 New plugin: cdmi-eos-qos plugin
 
-* build from source code - https://github.com/indigo-dc/cdmi-eos-qos
+- build from source code - https://github.com/indigo-dc/cdmi-eos-qos
   
 

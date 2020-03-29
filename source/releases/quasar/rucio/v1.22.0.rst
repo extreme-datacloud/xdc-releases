@@ -36,61 +36,69 @@ and a new `Rucio testbed instance <https://90.147.102.221/ui/>`_ is being setup.
 List of RfCs
 ~~~~~~~~~~~~
 
-* Features
+- Features
 
-    * `#2612 <https://github.com/rucio/rucio/issues/2612>`_ - Authentication & Authorisation: Rucio user authentication via OIDC protocol (XDC IAM), getting user info and JWT tokens
-    * `#2412 <https://github.com/rucio/rucio/issues/2412>`_ - Deletion: Reaper 2.0 #2412
-    * `#3348 <https://github.com/rucio/rucio/issues/3348>`_ - Release management: Add oidc auth templates to setup.py #3348
-    * `#533 <https://github.com/rucio/rucio/issues/533>`_ - Release management: Better way to deal with configuration / permissions / policy #533
+  -  `#2612 <https://github.com/rucio/rucio/issues/2612>`_ - Authentication & Authorisation: Rucio user authentication via OIDC protocol (XDC IAM), getting user info and JWT tokens
+  - `#2412 <https://github.com/rucio/rucio/issues/2412>`_ - Deletion: Reaper 2.0 #2412
+  - `#3348 <https://github.com/rucio/rucio/issues/3348>`_ - Release management: Add oidc auth templates to setup.py #3348
+  - `#533 <https://github.com/rucio/rucio/issues/533>`_ - Release management: Better way to deal with configuration / permissions / policy #533
 
-* Enhancements
+- Enhancements
 
-    * `#1637 <https://github.com/rucio/rucio/issues/1637>`_ - Deletion: Protection of sources too strict in the reaper #1637
+  - `#1637 <https://github.com/rucio/rucio/issues/1637>`_ - Deletion: Protection of sources too strict in the reaper #1637
 
-* Bugs fixes
+- Bugs fixes
 
-    * `#3337 <https://github.com/rucio/rucio/issues/3337>`_ -Authentication & Authorisation: Fixes to OIDC AuthN/Z after first deployment on a testbed #3337
+  - `#3337 <https://github.com/rucio/rucio/issues/3337>`_ -Authentication & Authorisation: Fixes to OIDC AuthN/Z after first deployment on a testbed #3337
 
 Installation methods
 ~~~~~~~~~~~~~~~~~~~~
 
-* for Rucio-server follow `Installing Rucio server guide <https://rucio.readthedocs.io/en/latest/installing_server.html>`_
+- for Rucio-server follow `Installing Rucio server guide <https://rucio.readthedocs.io/en/latest/installing_server.html>`_
 
-    * via pip
-    pip install rucio
+  - via pip
 
-    * via docker
-    docker run --name=rucio-server -p 80:80 -d indigodatacloud/rucio-server:XDC-2
+  .. code-block:: bash
 
-    * for more options see above documentation
+    # pip install rucio
 
-* for Rucio-daemons follow `Installing Rucio daemons guide <https://rucio.readthedocs.io/en/latest/installing_daemons.html>`_
+  - via docker
+  .. code-block:: bash
+    # docker run --name=rucio-server -p 80:80 -d indigodatacloud/rucio-server:XDC-2
 
-    * via pip
-    pip install rucio
+  - for more options see above documentation
 
-    * via docker
-    docker run --name=rucio-server -p 80:80 -d indigodatacloud/rucio-server:XDC-2
+- for Rucio-daemons follow `Installing Rucio daemons guide <https://rucio.readthedocs.io/en/latest/installing_daemons.html>`_
 
-    * for more options see above documentation.
+  - via pip
+  .. code-block:: bash
+
+    # pip install rucio
+
+  - via docker
+  .. code-block:: bash
+
+    # docker run --name=rucio-server -p 80:80 -d indigodatacloud/rucio-server:XDC-2
+
+  - for more options see above documentation.
 
 Known Issues
 ~~~~~~~~~~~~
 
-* N/A
+- N/A
 
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 
-* Source tarballs
-    * `rucio-1.22.0rc2.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/rucio-1.22.0rc2.tar.gz>`_
+- Source tarballs
+  - `rucio-1.22.0rc2.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/rucio-1.22.0rc2.tar.gz>`_
   
 
-* Docker Container:
-    * `indigodatacloud/rucio-server:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/XDC-2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__ (signed)
-    * `indigodatacloud/rucio-daemons:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/XDC-2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__ (signed)
-    * `indigodatacloud/rucio-server:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/release-1.22.0rc2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__
-    * `indigodatacloud/rucio-daemons:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/release-1.22.0rc2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__
+- Docker Container:
+  - `indigodatacloud/rucio-server:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/XDC-2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__ (signed)
+  - `indigodatacloud/rucio-daemons:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/XDC-2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__ (signed)
+  - `indigodatacloud/rucio-server:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/release-1.22.0rc2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__
+  - `indigodatacloud/rucio-daemons:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/release-1.22.0rc2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__
 
 
 

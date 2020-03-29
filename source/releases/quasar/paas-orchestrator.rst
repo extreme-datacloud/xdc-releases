@@ -24,6 +24,9 @@ Release Notes
 
    paas-orchestrator/*
 
+Documentation
+-------------
+
 Detailed documentation is available at:
 
 * `GitHub README <https://github.com/indigo-dc/orchestrator/blob/v2.3.0-FINAL/README.md>`_

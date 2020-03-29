@@ -189,7 +189,7 @@ and the fingerprint from
 
 .. code-block:: bash
 
-    # wget -q   -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -
+    # wget -q -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -
 
 
 Giving eXtreme - DataCloud repositories precedence over EPEL
@@ -198,7 +198,7 @@ Giving eXtreme - DataCloud repositories precedence over EPEL
 It is strongly recommended that INDIGO repositories take precedence over EPEL when installing and upgrading packages.
 For manual configuration:
 
-- you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:
+- you must install the **yum-priorities** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:
 
 .. code-block:: bash
 
@@ -274,7 +274,7 @@ Currently, content trust is disabled by default. You must enable it by setting t
 For more details regarding the "Content Trust in Docker" please read [Docker's Documentation](https://docs.docker.com/engine/security/trust/content_trust/)
 
 Content trust is associated with the TAG portion of an image.
-For XDC-2 (Quasar) release the signed tag is ***XDC-2***. See example bellow if you want to ensure the correct use of eXtreme - DataCloud images:
+For XDC-2 (Quasar) release the signed tag is **XDC-2**. See example bellow if you want to ensure the correct use of eXtreme - DataCloud images:
 
 - for Core Services
 

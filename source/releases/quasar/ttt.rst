@@ -5,7 +5,7 @@ TOSCA types & templates plugin
 
 The **TOSCA types** repository shows a YAML description of
 new types added first in the INDIGO-DataCloud project, and afterwards
-in the DEEP-HybridDataCloud 8DEEP) and eXtreme DataCloud (XDC) projects,
+in the DEEP-HybridDataCloud (DEEP) and eXtreme DataCloud (XDC) projects,
 to extend TOSCA Simple Profile in YAML Version 1.0 to add
 high level entities. In the examples directory there are a
 set of TOSCA documents using these types that will be

@@ -10,13 +10,18 @@ improvements and bug fixes detailed bellow
 List of RfCs
 ~~~~~~~~~~~~
 - New features:
+
   - Added timeout for deployment creation/update. The following new parameters can be used for the REST API call to /deployment (POST/PUT):
+
     - timeoutMins: overall timeout for the deployment creation/update;
     - providerTimeoutMins: timeout for the deployment creation/update on single provider.
+
   -  Added credentials management for providers not integrated with IAM
+
     - the credentials are automatically retrieved from Vault
 
 - Improvements
+
   - Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1) that fixes problem with block device attachment.
   - Updated IM Java Client library (v0.4.14).
   - Now users can list only their own deployments. Only users belonging to a specific 
@@ -24,6 +29,7 @@ List of RfCs
   - Improved retry strategy for Marathon deployments
 
 - Bug fixed:
+
   - Fixed OnedataSpace resource management
   - Fixed configuration (application.properties)
 
@@ -37,7 +43,9 @@ The PaaS Orchestrator v.2.3.0-FINAL has the following services dependencies
 - SLAM release v2.0.0 (docker image indigodatacloud/slam:v2.0.0)
 - CPR release v0.7.0 (docker image indigodatacloud/cloudproviderranker:indigo_2)
 - Monitoring - Zabbix Wrapper 1.0.2 (docker image indigodatacloud/zabbix-wrapper:indigo_2)
+
   - Monitoring probes: Openstack probe 1.4.2, Mesos probe 1.4 and QCG probe 1.0
+
 - IM release >= 1.9.1 
 - (Optional) Onedata v18.0.2-rc[11,12]
 - tosca-types v4.0.X
@@ -57,5 +65,6 @@ Known Issues
 List of Artifacts
 ~~~~~~~~~~~~~~~~~
 - Docker Container:
+
   - `indigodatacloud/orchestrator:XDC-2 <https://hub.docker.com/layers/indigodatacloud/orchestrator/XDC-2/images/sha256-150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772?context=repo>`_(signed)
   - `indigodatacloud/orchestrator:2.3.0-FINAL <https://hub.docker.com/layers/indigodatacloud/orchestrator/2.3.0-final/images/sha256-150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772?context=repo>`_
