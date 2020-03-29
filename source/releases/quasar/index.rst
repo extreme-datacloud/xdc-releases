@@ -89,14 +89,12 @@ The XDC-2 (Quasar) release consists in 9 Products:
 
 - 8 Docker containers
 
-The release is fully supported 
+The release is fully supported on the following Operating Systems platforms: 
 
-- on the following Operating Systems platforms: 
-
-  - CentOS 7
-  - Ubuntu 16.04 & 18.04
-  - Optionally PTs support also other OS platforms. You can find more information in the individual
-    products documentation.
+- CentOS 7
+- Ubuntu 16.04 & 18.04
+- Optionally PTs support also other OS platforms. You can find more information in the individual
+  products documentation.
 
 You can find in the later sections the full list of products, with
 detailed release notes and instructions for their
@@ -116,30 +114,35 @@ Installing the Operating Systems
 CentOS 7 
 ^^^^^^^^
 
-For more information on CentOS please check: [https://www.centos.org/](https://www.centos.org/)
+For more information on CentOS please check: https://www.centos.org/
 
-All the information to install this operating system can be found at [https://www.centos.org/download/](https://www.centos.org/download/)
+All the information to install this operating system can be found at https://www.centos.org/download/
 
-You will find there information on CentOS [packages](http://mirror.centos.org/centos/7/) and [Docker Containers](https://hub.docker.com/_/centos/).
+You will find there information on `CentOS packages <http://mirror.centos.org/centos/7/>`_ and 
+`Docker Containers <https://hub.docker.com/_/centos/>`_.
 
 The EPEL repository
 """""""""""""""""""
 
-If not present by default on your nodes, you should enable the EPEL repository (https://fedoraproject.org/wiki/EPEL)
+If not present by default on your nodes, you should enable the `EPEL repository <https://fedoraproject.org/wiki/EPEL>`_.
 
-EPEL has an 'epel-release' package that includes gpg keys for package signing and repository information. Installing the latest version of epel-release package available on EPEL7 repositories like:
+EPEL has an *epel-release* package that includes gpg keys for package signing and repository information. Installing the 
+latest version of epel-release package available on EPEL7 repositories like:
 
-* [http://download.fedoraproject.org/pub/epel/7/x86_64/e/](http://download.fedoraproject.org/pub/epel/7/x86_64/e/) 
+* `<http://download.fedoraproject.org/pub/epel/7/x86_64/e/>`_
 
-allows you to use normal tools, such as **yum**, to install packages and their dependencies. By default the stable EPEL repo should be enabled.
+allows you to use normal tools, such as **yum**, to install packages and their dependencies. 
+By default the stable EPEL repo should be enabled.
 
 
 Ubuntu 16.04 & 18.04
 ^^^^^^^^^^^^^^^^^^^^
 
-* For more information on Ubuntu please check: [http://www.ubuntu.com/](http://www.ubuntu.com/)
+* For more information on Ubuntu please check: `<http://www.ubuntu.com/>`_.
 
-Information to install this operating system can be found at [http://releases.ubuntu.com/xenial/](http://releases.ubuntu.com/xenial/) and or at [Ubuntu Community Installation Guide ](https://help.ubuntu.com/community/Installation) and regarding Docker Containers at [Ubuntu Official Docker repository](https://hub.docker.com/_/ubuntu/).
+Information to install this operating system can be found at `<http://releases.ubuntu.com/xenial/>`_ and or 
+at `Ubuntu Community Installation Guide <https://help.ubuntu.com/community/Installation>`_ and regarding Docker Containers 
+at `Ubuntu Official Docker repository <https://hub.docker.com/_/ubuntu/>`_.
 
 
 Enable the eXtreme - DataCloud packages repositories
