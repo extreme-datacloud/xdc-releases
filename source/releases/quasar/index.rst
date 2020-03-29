@@ -52,7 +52,6 @@ Key technical highlights
   - Improved support of ECRIN and CTA use cases:
     - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
     - the redesign of the changes stream API, to allow more fine-grained control over the stream
-
 -  PaaS Orchestrator
 
   - Implementation of timeout for deployment creation/update and credentials management for 
@@ -60,7 +59,6 @@ Key technical highlights
   - Added credentials management for providers not integrated with INDIGO IAM
   - Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1)
   - Improved retry strategy for Marathon deployments
-
 -  PaaS Orchestrator Dashboard
 
   - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly deploy desired workflows and infrastructures
@@ -81,7 +79,6 @@ Release Notes
 =============
 
 The XDC-2 (Quasar) release consists in 9 Products:
-
 -  77 OS packages
 
    -  47 RPMS, SRPMS, and tarballs
@@ -174,12 +171,16 @@ and the fingerprint from
 `here <http://repo.indigo-datacloud.eu/repository/INDIGODC_key_fingerprint.asc>`_.
 
 * for CentOS7 save the key under */etc/pki/rpm-gpg/* 
+
 .. code-block:: bash
+
 # rpm --import http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc
 
 * for Ubuntu: 
+
 .. code-block:: bash
-```# wget -q   -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -```
+
+# wget -q   -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -
 
 
 Giving eXtreme - DataCloud repositories precedence over EPEL
@@ -188,7 +189,9 @@ Giving eXtreme - DataCloud repositories precedence over EPEL
 It is strongly recommended that INDIGO repositories take precedence over EPEL when installing and upgrading packages.
 For manual configuration:
 * you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:<br>
+
 .. code-block:: bash
+
 [ main ]
 enabled = 1
 check_obsoletes = 1
@@ -209,17 +212,23 @@ YUM & APT configuration files are available at:
 
 Install repositories :
 * CentOS7: 
+
 .. code-block:: bash
+
 # wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/xdc-release-2.0.0-1.el7.noarch.rpm
 # yum localinstall -y xdc-release-2.0.0-1.el7.noarch.rpm 
 
 * Ubuntu 16.04:
+
 .. code-block:: bash
+
 # wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
 # dpkg -i xdc-release_2.0.0-1_amd64.deb 
 
 * Ubuntu 18.04:
+
 .. code-block:: bash
+
 # wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
 # dpkg -i xdc-release_2.0.0-1_amd64.deb
 
@@ -243,7 +252,9 @@ tagged with “XDC-2” tag and signed, leveraging the Docker’s trust features
 users can pull trusted images.
 
 Currently, content trust is disabled by default. You must enable it by setting the **DOCKER_CONTENT_TRUST** environment variable, like bellow:
+
 .. code-block:: bash
+
 # export DOCKER_CONTENT_TRUST=1
 
 For more details regarding the "Content Trust in Docker" please read [Docker's Documentation](https://docs.docker.com/engine/security/trust/content_trust/)
@@ -251,7 +262,9 @@ For more details regarding the "Content Trust in Docker" please read [Docker's D
 Content trust is associated with the TAG portion of an image.
 For XDC-2 (Quasar) release the signed tag is ***XDC-2***. See example bellow if you want to ensure the correct use of eXtreme - DataCloud images:
 * for Core Services
+
 .. code-block:: bash
+
 # export DOCKER_CONTENT_TRUST=1
 # docker pull indigodatacloud/orchestrator:2.3.0-FINAL
 No trust data for 2.3.0-FINAL
@@ -269,7 +282,9 @@ REPOSITORY                     TAG                 IMAGE ID            CREATED  
 indigodatacloud/orchestrator   XDC-2              bdbe758d9f32        37 hours ago        843MB
 
 * for Applications:
+
 .. code-block:: bash
+
 # export DOCKER_CONTENT_TRUST=1
 # docker pull extremedatacloud/xdc_lfw_frontend:latest
 No trust data for latest
