@@ -194,7 +194,7 @@ Giving eXtreme - DataCloud repositories precedence over EPEL
 It is strongly recommended that INDIGO repositories take precedence over EPEL when installing and upgrading packages.
 For manual configuration:
 
-* you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:
+- you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:
 
 .. code-block:: bash
 
