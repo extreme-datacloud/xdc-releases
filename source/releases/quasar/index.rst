@@ -80,7 +80,7 @@ Key technical highlights
 Release Notes
 =============
 
-The XDC-2 (Quasar) release consists in 9 Products:
+The XDC-2 (Quasar) release consists in 8 Products:
 
 - 77 OS packages
 
