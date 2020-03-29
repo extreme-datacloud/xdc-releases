@@ -1,5 +1,6 @@
+##############
 XDC-2 (Quasar)
-==============
+##############
 
 The `eXtreme-DataCloud <https://extreme-datacloud.eu/>`__
 project is pleased to announce the general availability of its **second
@@ -7,7 +8,7 @@ public software release**, codenamed **Quasar**
 
 
 Included components
--------------------
+===================
 
 .. toctree::
    :maxdepth: 1
@@ -24,7 +25,7 @@ Included components
 
 
 Key technical highlights
-------------------------
+========================
 
 - CachingOnDemand
 
@@ -52,7 +53,6 @@ Key technical highlights
     - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
     - the redesign of the changes stream API, to allow more fine-grained control over the stream
 
-
 -  PaaS Orchestrator
 
   - Implementation of timeout for deployment creation/update and credentials management for 
@@ -78,7 +78,7 @@ Key technical highlights
   - Added TOSCA templates for the LifeWatch use-case
 
 Release Notes
--------------
+=============
 
 The XDC-2 (Quasar) release consists in 9 Products:
 
@@ -101,10 +101,44 @@ detailed release notes and instructions for their
 installation/configuration.
 
 Generic Installation Notes
-------------------
+==========================
 
-All eXtreme-DataCloud products are distributed from standard
-Operating Systems (OS) repositories and DockerHub registry.
+This chapter provides information on how to enable and use the XDC software repositories 
+hosting the second major release XDC-2 (Quasar).
+
+All eXtreme-DataCloud products are distributed from standard Operating Systems (OS) repositories and DockerHub registry.
+
+Installing the Operating Systems
+================================
+
+CentOS 7 
+--------
+
+For more information on CentOS please check: [https://www.centos.org/](https://www.centos.org/)
+
+All the information to install this operating system can be found at [https://www.centos.org/download/](https://www.centos.org/download/)
+
+You will find there information on CentOS [packages](http://mirror.centos.org/centos/7/) and [Docker Containers](https://hub.docker.com/_/centos/).
+
+##### The EPEL repository
+If not present by default on your nodes, you should enable the EPEL repository (https://fedoraproject.org/wiki/EPEL)
+
+EPEL has an 'epel-release' package that includes gpg keys for package signing and repository information. Installing the latest version of epel-release package available on EPEL7 repositories like:
+* [http://download.fedoraproject.org/pub/epel/7/x86_64/e/](http://download.fedoraproject.org/pub/epel/7/x86_64/e/) 
+
+allows you to use normal tools, such as **yum**, to install packages and their dependencies. By default the stable EPEL repo should be enabled.
+
+
+ Ubuntu 16.04 & 18.04
+ --------------------
+
+* For more information on Ubuntu please check: [http://www.ubuntu.com/](http://www.ubuntu.com/)
+
+Information to install this operating system can be found at [http://releases.ubuntu.com/xenial/](http://releases.ubuntu.com/xenial/) and or at [Ubuntu Community Installation Guide ](https://help.ubuntu.com/community/Installation) and regarding Docker Containers at [Ubuntu Official Docker repository](https://hub.docker.com/_/ubuntu/).
+
+
+Enable the eXtreme - DataCloud packages repositories
+====================================================
 
 The packages repositories have the following structure:
 
@@ -133,36 +167,131 @@ The packages repositories have the following structure:
   * containing signed packages that will become part of the next stable update, available for technical-previews
 
 All signed packages use the INDIGO - DataCloud gpg key. The public key can be downloaded from
-`here <http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc>`__,
+`here <http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc>`_,
 and the fingerprint from
-`here <http://repo.indigo-datacloud.eu/repository/INDIGODC_key_fingerprint.asc>`__.
+`here <http://repo.indigo-datacloud.eu/repository/INDIGODC_key_fingerprint.asc>`_.
+
+* for CentOS7 save the key under */etc/pki/rpm-gpg/* 
+.. code-block:: bash
+# rpm --import http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc
+
+* for Ubuntu: 
+.. code-block:: bash
+```# wget -q   -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -```
+
+
+Giving eXtreme - DataCloud repositories precedence over EPEL
+------------------------------------------------------------
+
+It is strongly recommended that INDIGO repositories take precedence over EPEL when installing and upgrading packages.
+For manual configuration:
+* you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:<br>
+.. code-block:: bash
+[ main ]
+enabled = 1
+check_obsoletes = 1
+
+For automatic configuration:
+* we strongly recommend the use of **xdc-release** package. Please follow the instructions given bellow on what version of the package to use, how to get and install it.
+
+Configuring the use of eXtreme - DataCloud repositories
+------------------------------------------------------------
+
+XDC-2 production repositories are available at:
+* http://repo.indigo-datacloud.eu/repository/xdc/
+
+YUM & APT configuration files are available at:
+* `CentOS7 repo file <https://repo.indigo-datacloud.eu/repository/xdc/repos/xdc-2.repo>`_
+* `Ubuntu 16.04 list file <https://repo.indigo-datacloud.eu/repository/xdc/repos/xdc-2-ubuntu16_04.list>`_
+* `Ubuntu 18.04 list file <https://repo.indigo-datacloud.eu/repository/xdc/repos/xdc-2-ubuntu18_04.list>`_
+
+Install repositories :
+* CentOS7: 
+.. code-block:: bash
+# wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/xdc-release-2.0.0-1.el7.noarch.rpm
+# yum localinstall -y xdc-release-2.0.0-1.el7.noarch.rpm 
+
+* Ubuntu 16.04:
+.. code-block:: bash
+# wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
+# dpkg -i xdc-release_2.0.0-1_amd64.deb 
+
+* Ubuntu 18.04:
+.. code-block:: bash
+# wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
+# dpkg -i xdc-release_2.0.0-1_amd64.deb
+
+These packages will install required dependencies, the INDIGO - DataCloud public key and 
+ensures the precedence of eXtreme - DataCloud repositories over EPEL and Ubuntu. 
 
 It is strongly recommended the use of the lastest version of the
-xdc-release packages containing the public key and the YUM and APT
+**xdc-release** packages containing the public key and the YUM and APT
 repository files.
 
-On the `DockerHub Registry <https://hub.docker.com/>`__, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
+Enable the INDIGO - DataCloud Containers repositories
+====================================================
 
--  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/>`__,
-   
--  `xdc <https://hub.docker.com/u/extremedatacloud/>`__
+On the `DockerHub Registry <https://hub.docker.com/>`_, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
+
+-  `indigodatacloud <https://hub.docker.com/u/indigodatacloud/>`_,
+-  `xdc <https://hub.docker.com/u/extremedatacloud/>`_
 
 Containers present in those repositories and released in XDC-2 are
-tagged with “XDC-2” tag and signed, leveraging the Docker’s trust features so that users can pull trusted images.
+tagged with “XDC-2” tag and signed, leveraging the Docker’s trust features so that 
+users can pull trusted images.
 
-To understand how to install and configure XDC-2 (codename Quasar) services and
-components either refer to the `Generic Installation Notes`_ chapter or to each individual product
-documentation.
+Currently, content trust is disabled by default. You must enable it by setting the **DOCKER_CONTENT_TRUST** environment variable, like bellow:
+.. code-block:: bash
+# export DOCKER_CONTENT_TRUST=1
 
-Software
---------
+For more details regarding the "Content Trust in Docker" please read [Docker's Documentation](https://docs.docker.com/engine/security/trust/content_trust/)
 
-XDC-2 software can be downloaded from `eXtreme-DataCloud repositories <http://repo.indigo-datacloud.eu/repository/xdc/>`__.
+Content trust is associated with the TAG portion of an image.
+For XDC-2 (Quasar) release the signed tag is ***XDC-2***. See example bellow if you want to ensure the correct use of eXtreme - DataCloud images:
+* for Core Services
+.. code-block:: bash
+# export DOCKER_CONTENT_TRUST=1
+# docker pull indigodatacloud/orchestrator:2.3.0-FINAL
+No trust data for 2.3.0-FINAL
+# docker pull indigodatacloud/orchestrator:XDC-2
+Pull (1 of 1): indigodatacloud/orchestrator:XDC-2@sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
+sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772: Pulling from indigodatacloud/orchestrator
+93857f76ae30: Pull complete
+[...]
+e8c92b40b492: Pull complete
+Digest: sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
+Status: Downloaded newer image for indigodatacloud/orchestrator@sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
+Tagging indigodatacloud/orchestrator@sha256:441c8b037684422ccdf2fdec322c9c09904ed3ce74d9fcc7d2862a9f53ad36be as indigodatacloud/orchestrator:indigo_2
+# docker images
+REPOSITORY                     TAG                 IMAGE ID            CREATED             SIZE
+indigodatacloud/orchestrator   XDC-2              bdbe758d9f32        37 hours ago        843MB
 
-Documentation
--------------
+* for Applications:
+.. code-block:: bash
+# export DOCKER_CONTENT_TRUST=1
+# docker pull extremedatacloud/xdc_lfw_frontend:latest
+No trust data for latest
+# docker pull extremedatacloud/xdc_lfw_frontend:XDC-2
+Pull (1 of 1): extremedatacloud/xdc_lfw_frontend:XDC-2@sha256:64df8c1f1.............
+sha256:64df8c1f1103984...................: Pulling from extremedatacloud/xdc_lfw_frontend
+45a2e645736c: Pull complete
+[...]
+686a6aef9fe7: Pull complete
+Digest: sha256:64df8..........
+Status: Downloaded newer image for extremedatacloud/xdc_lfw_frontend@sha256:64df8c1f1103...........
+# docker images |grep xdc_lfw_frontend
+extremedatacloud/xdc_lfw_frontend             XDC-2            6c47a81b761d        11 days ago         1.826 GB
 
-Please find XDC-2 documentation `here <https://releases.extreme-datacloud.eu/>`__.
+
+
+
+## Important note on automatic updates 
+
+The CentOS and Ubuntu Operating Systems both offer auto-updates mechanisms. Sometimes middleware updates require non-trivial configuration changes or a reconfiguration of the service. This could involve service restarts, new configuration files, etc, which makes it difficult to ensure that automatic updates will not break a service. Thus
+
+**WE STRONGLY RECOMMEND NOT TO USE AUTOMATIC UPDATE PROCEDURE OF ANY KIND**
+
+on the eXtreme - DataCloud  repositories (you can keep it turned on for the OS). You should read the update information provides by each service and do the upgrade manually when an update has been released! 
 
 Support
 -------
