@@ -109,10 +109,10 @@ hosting the second major release XDC-2 (Quasar).
 All eXtreme-DataCloud products are distributed from standard Operating Systems (OS) repositories and DockerHub registry.
 
 Installing the Operating Systems
-================================
+--------------------------------
 
 CentOS 7 
---------
+^^^^^^^^
 
 For more information on CentOS please check: [https://www.centos.org/](https://www.centos.org/)
 
@@ -120,7 +120,9 @@ All the information to install this operating system can be found at [https://ww
 
 You will find there information on CentOS [packages](http://mirror.centos.org/centos/7/) and [Docker Containers](https://hub.docker.com/_/centos/).
 
-##### The EPEL repository
+The EPEL repository
+"""""""""""""""""""
+
 If not present by default on your nodes, you should enable the EPEL repository (https://fedoraproject.org/wiki/EPEL)
 
 EPEL has an 'epel-release' package that includes gpg keys for package signing and repository information. Installing the latest version of epel-release package available on EPEL7 repositories like:
@@ -129,8 +131,8 @@ EPEL has an 'epel-release' package that includes gpg keys for package signing an
 allows you to use normal tools, such as **yum**, to install packages and their dependencies. By default the stable EPEL repo should be enabled.
 
 
- Ubuntu 16.04 & 18.04
- --------------------
+Ubuntu 16.04 & 18.04
+^^^^^^^^^^^^^^^^^^^^
 
 * For more information on Ubuntu please check: [http://www.ubuntu.com/](http://www.ubuntu.com/)
 
@@ -138,7 +140,7 @@ Information to install this operating system can be found at [http://releases.ub
 
 
 Enable the eXtreme - DataCloud packages repositories
-====================================================
+----------------------------------------------------
 
 The packages repositories have the following structure:
 
@@ -181,7 +183,7 @@ and the fingerprint from
 
 
 Giving eXtreme - DataCloud repositories precedence over EPEL
-------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 It is strongly recommended that INDIGO repositories take precedence over EPEL when installing and upgrading packages.
 For manual configuration:
@@ -195,7 +197,7 @@ For automatic configuration:
 * we strongly recommend the use of **xdc-release** package. Please follow the instructions given bellow on what version of the package to use, how to get and install it.
 
 Configuring the use of eXtreme - DataCloud repositories
-------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 XDC-2 production repositories are available at:
 * http://repo.indigo-datacloud.eu/repository/xdc/
@@ -229,7 +231,7 @@ It is strongly recommended the use of the lastest version of the
 repository files.
 
 Enable the INDIGO - DataCloud Containers repositories
-====================================================
+-----------------------------------------------------
 
 On the `DockerHub Registry <https://hub.docker.com/>`_, eXtreme-DataCloud uses the INDIGO - DataCloud and XDC Organizations:
 
@@ -272,20 +274,19 @@ indigodatacloud/orchestrator   XDC-2              bdbe758d9f32        37 hours a
 # docker pull extremedatacloud/xdc_lfw_frontend:latest
 No trust data for latest
 # docker pull extremedatacloud/xdc_lfw_frontend:XDC-2
-Pull (1 of 1): extremedatacloud/xdc_lfw_frontend:XDC-2@sha256:64df8c1f1.............
-sha256:64df8c1f1103984...................: Pulling from extremedatacloud/xdc_lfw_frontend
-45a2e645736c: Pull complete
+Pull (1 of 1): extremedatacloud/xdc_lfw_frontend:XDC-2@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
+sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf: Pulling from extremedatacloud/xdc_lfw_frontend
 [...]
 686a6aef9fe7: Pull complete
 Digest: sha256:64df8..........
 Status: Downloaded newer image for extremedatacloud/xdc_lfw_frontend@sha256:64df8c1f1103...........
 # docker images |grep xdc_lfw_frontend
-extremedatacloud/xdc_lfw_frontend             XDC-2            6c47a81b761d        11 days ago         1.826 GB
+extremedatacloud/xdc_lfw_frontend                XDC-2               b72acc7380d4        2 weeks ago         4.53GB
 
 
 
-
-## Important note on automatic updates 
+Important note on automatic updates 
+===================================
 
 The CentOS and Ubuntu Operating Systems both offer auto-updates mechanisms. Sometimes middleware updates require non-trivial configuration changes or a reconfiguration of the service. This could involve service restarts, new configuration files, etc, which makes it difficult to ensure that automatic updates will not break a service. Thus
 
@@ -294,7 +295,7 @@ The CentOS and Ubuntu Operating Systems both offer auto-updates mechanisms. Some
 on the eXtreme - DataCloud  repositories (you can keep it turned on for the OS). You should read the update information provides by each service and do the upgrade manually when an update has been released! 
 
 Support
--------
+=======
 
 Most complex software contains bugs, we are not an exception. One of the
 features of free and open source software is the ability to report bugs,
