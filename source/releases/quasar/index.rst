@@ -292,9 +292,10 @@ No trust data for latest
 Pull (1 of 1): extremedatacloud/xdc_lfw_frontend:XDC-2@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
 sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf: Pulling from extremedatacloud/xdc_lfw_frontend
 [...]
-686a6aef9fe7: Pull complete
-Digest: sha256:64df8..........
-Status: Downloaded newer image for extremedatacloud/xdc_lfw_frontend@sha256:64df8c1f1103...........
+Digest: sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
+Status: Downloaded newer image for extremedatacloud/xdc_lfw_frontend@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
+Tagging extremedatacloud/xdc_lfw_frontend@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf as extremedatacloud/xdc_lfw_frontend:XDC-2
+docker.io/extremedatacloud/xdc_lfw_frontend:XDC-2
 # docker images |grep xdc_lfw_frontend
 extremedatacloud/xdc_lfw_frontend                XDC-2               b72acc7380d4        2 weeks ago         4.53GB
 
