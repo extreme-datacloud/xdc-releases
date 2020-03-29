@@ -52,14 +52,15 @@ Key technical highlights
   - Improved support of ECRIN and CTA use cases:
     - improvement of file indexing performance for scanning a 800k dataset provided by ECRIN
     - the redesign of the changes stream API, to allow more fine-grained control over the stream
--  PaaS Orchestrator
 
+- PaaS Orchestrator
   - Implementation of timeout for deployment creation/update and credentials management for 
     providers not integrated with IAM
   - Added credentials management for providers not integrated with INDIGO IAM
   - Updated A4C Tosca Parser library (v2.1.0-DEEP-1.2.1)
   - Improved retry strategy for Marathon deployments
--  PaaS Orchestrator Dashboard
+
+- PaaS Orchestrator Dashboard
 
   - First release of the **INDIGO PaaS Orchestrator - Simple Graphical UI** allowing users to easly deploy desired workflows and infrastructures
 
@@ -79,15 +80,18 @@ Release Notes
 =============
 
 The XDC-2 (Quasar) release consists in 9 Products:
--  77 OS packages
 
-   -  47 RPMS, SRPMS, and tarballs
-   -  35 binary & source DEBS
+- 77 OS packages
 
--  8 Docker containers
+   - 47 RPMS, SRPMS, and tarballs
+   - 35 binary & source DEBS
+
+- 8 Docker containers
 
 The release is fully supported 
+
 - on the following Operating Systems platforms: 
+
   - CentOS 7
   - Ubuntu 16.04 & 18.04
   - Optionally PTs support also other OS platforms. You can find more information in the individual
@@ -123,6 +127,7 @@ The EPEL repository
 If not present by default on your nodes, you should enable the EPEL repository (https://fedoraproject.org/wiki/EPEL)
 
 EPEL has an 'epel-release' package that includes gpg keys for package signing and repository information. Installing the latest version of epel-release package available on EPEL7 repositories like:
+
 * [http://download.fedoraproject.org/pub/epel/7/x86_64/e/](http://download.fedoraproject.org/pub/epel/7/x86_64/e/) 
 
 allows you to use normal tools, such as **yum**, to install packages and their dependencies. By default the stable EPEL repo should be enabled.
@@ -188,7 +193,8 @@ Giving eXtreme - DataCloud repositories precedence over EPEL
 
 It is strongly recommended that INDIGO repositories take precedence over EPEL when installing and upgrading packages.
 For manual configuration:
-* you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:<br>
+
+* you must install the **yum-priorities**** plugin and ensure that its configuration file, */etc/yum/pluginconf.d/priorities.conf* is as follows:
 
 .. code-block:: bash
 
@@ -197,20 +203,24 @@ For manual configuration:
     check_obsoletes = 1
 
 For automatic configuration:
+
 * we strongly recommend the use of **xdc-release** package. Please follow the instructions given bellow on what version of the package to use, how to get and install it.
 
 Configuring the use of eXtreme - DataCloud repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 XDC-2 production repositories are available at:
+
 * http://repo.indigo-datacloud.eu/repository/xdc/
 
 YUM & APT configuration files are available at:
+
 * `CentOS7 repo file <https://repo.indigo-datacloud.eu/repository/xdc/repos/xdc-2.repo>`_
 * `Ubuntu 16.04 list file <https://repo.indigo-datacloud.eu/repository/xdc/repos/xdc-2-ubuntu16_04.list>`_
 * `Ubuntu 18.04 list file <https://repo.indigo-datacloud.eu/repository/xdc/repos/xdc-2-ubuntu18_04.list>`_
 
 Install repositories :
+
 * CentOS7: 
 
 .. code-block:: bash
