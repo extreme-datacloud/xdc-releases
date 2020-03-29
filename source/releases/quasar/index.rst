@@ -174,13 +174,13 @@ and the fingerprint from
 
 .. code-block:: bash
 
-# rpm --import http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc
+    # rpm --import http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc
 
 * for Ubuntu: 
 
 .. code-block:: bash
 
-# wget -q   -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -
+    # wget -q   -O - http://repo.indigo-datacloud.eu/repository/RPM-GPG-KEY-indigodc | sudo apt-key add -
 
 
 Giving eXtreme - DataCloud repositories precedence over EPEL
@@ -192,9 +192,9 @@ For manual configuration:
 
 .. code-block:: bash
 
-[ main ]
-enabled = 1
-check_obsoletes = 1
+    [ main ]
+    enabled = 1
+    check_obsoletes = 1
 
 For automatic configuration:
 * we strongly recommend the use of **xdc-release** package. Please follow the instructions given bellow on what version of the package to use, how to get and install it.
@@ -215,22 +215,22 @@ Install repositories :
 
 .. code-block:: bash
 
-# wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/xdc-release-2.0.0-1.el7.noarch.rpm
-# yum localinstall -y xdc-release-2.0.0-1.el7.noarch.rpm 
+    # wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/base/xdc-release-2.0.0-1.el7.noarch.rpm
+    # yum localinstall -y xdc-release-2.0.0-1.el7.noarch.rpm 
 
 * Ubuntu 16.04:
 
 .. code-block:: bash
 
-# wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
-# dpkg -i xdc-release_2.0.0-1_amd64.deb 
+    # wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
+    # dpkg -i xdc-release_2.0.0-1_amd64.deb 
 
 * Ubuntu 18.04:
 
 .. code-block:: bash
 
-# wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
-# dpkg -i xdc-release_2.0.0-1_amd64.deb
+    # wget https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/xdc-release_2.0.0-1_amd64.deb
+    # dpkg -i xdc-release_2.0.0-1_amd64.deb
 
 These packages will install required dependencies, the INDIGO - DataCloud public key and 
 ensures the precedence of eXtreme - DataCloud repositories over EPEL and Ubuntu. 
@@ -255,7 +255,7 @@ Currently, content trust is disabled by default. You must enable it by setting t
 
 .. code-block:: bash
 
-# export DOCKER_CONTENT_TRUST=1
+    # export DOCKER_CONTENT_TRUST=1
 
 For more details regarding the "Content Trust in Docker" please read [Docker's Documentation](https://docs.docker.com/engine/security/trust/content_trust/)
 
@@ -265,41 +265,39 @@ For XDC-2 (Quasar) release the signed tag is ***XDC-2***. See example bellow if 
 
 .. code-block:: bash
 
-# export DOCKER_CONTENT_TRUST=1
-# docker pull indigodatacloud/orchestrator:2.3.0-FINAL
-No trust data for 2.3.0-FINAL
-# docker pull indigodatacloud/orchestrator:XDC-2
-Pull (1 of 1): indigodatacloud/orchestrator:XDC-2@sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
-sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772: Pulling from indigodatacloud/orchestrator
-93857f76ae30: Pull complete
-[...]
-e8c92b40b492: Pull complete
-Digest: sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
-Status: Downloaded newer image for indigodatacloud/orchestrator@sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
-Tagging indigodatacloud/orchestrator@sha256:441c8b037684422ccdf2fdec322c9c09904ed3ce74d9fcc7d2862a9f53ad36be as indigodatacloud/orchestrator:indigo_2
-# docker images
-REPOSITORY                     TAG                 IMAGE ID            CREATED             SIZE
-indigodatacloud/orchestrator   XDC-2              bdbe758d9f32        37 hours ago        843MB
+    # export DOCKER_CONTENT_TRUST=1
+    # docker pull indigodatacloud/orchestrator:2.3.0-FINAL
+    No trust data for 2.3.0-FINAL
+    # docker pull indigodatacloud/orchestrator:XDC-2
+    Pull (1 of 1): indigodatacloud/orchestrator:XDC-2@sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
+    sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772: Pulling from indigodatacloud/orchestrator
+    93857f76ae30: Pull complete
+    [...]
+    e8c92b40b492: Pull complete
+    Digest: sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
+    Status: Downloaded newer image for indigodatacloud/orchestrator@sha256:150e430bc7672ef0b54e9f849e1f0208da9fed0f7cff5626f379eb6778579772
+    Tagging indigodatacloud/orchestrator@sha256:441c8b037684422ccdf2fdec322c9c09904ed3ce74d9fcc7d2862a9f53ad36be as indigodatacloud/orchestrator:indigo_2
+    # docker images
+    REPOSITORY                     TAG                 IMAGE ID            CREATED             SIZE
+    indigodatacloud/orchestrator   XDC-2              bdbe758d9f32        37 hours ago        843MB
 
 * for Applications:
 
 .. code-block:: bash
 
-# export DOCKER_CONTENT_TRUST=1
-# docker pull extremedatacloud/xdc_lfw_frontend:latest
-No trust data for latest
-# docker pull extremedatacloud/xdc_lfw_frontend:XDC-2
-Pull (1 of 1): extremedatacloud/xdc_lfw_frontend:XDC-2@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
-sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf: Pulling from extremedatacloud/xdc_lfw_frontend
-[...]
-Digest: sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
-Status: Downloaded newer image for extremedatacloud/xdc_lfw_frontend@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
-Tagging extremedatacloud/xdc_lfw_frontend@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf as extremedatacloud/xdc_lfw_frontend:XDC-2
-docker.io/extremedatacloud/xdc_lfw_frontend:XDC-2
-# docker images |grep xdc_lfw_frontend
-extremedatacloud/xdc_lfw_frontend                XDC-2               b72acc7380d4        2 weeks ago         4.53GB
-
-
+    # export DOCKER_CONTENT_TRUST=1
+    # docker pull extremedatacloud/xdc_lfw_frontend:latest
+    No trust data for latest
+    # docker pull extremedatacloud/xdc_lfw_frontend:XDC-2
+    Pull (1 of 1): extremedatacloud/xdc_lfw_frontend:XDC-2@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
+    sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf: Pulling from extremedatacloud/xdc_lfw_frontend
+    [...]
+    Digest: sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
+    Status: Downloaded newer image for extremedatacloud/xdc_lfw_frontend@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf
+    Tagging extremedatacloud/xdc_lfw_frontend@sha256:dd6024ee2fa9065d5ed332adb7133c582aa93d53b5148bc890079a78f66a63cf as extremedatacloud/xdc_lfw_frontend:XDC-2
+    docker.io/extremedatacloud/xdc_lfw_frontend:XDC-2
+    # docker images |grep xdc_lfw_frontend
+    extremedatacloud/xdc_lfw_frontend                XDC-2               b72acc7380d4        2 weeks ago         4.53GB
 
 Important note on automatic updates 
 ===================================

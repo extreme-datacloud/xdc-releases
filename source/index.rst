@@ -14,8 +14,8 @@ eXtreme-DataCloud releases
 .. toctree::
    :maxdepth: 1
 
-   releases/pulsar/index.rst
    releases/quasar/index.rst
+   releases/pulsar/index.rst
 
 
 Release repositories
