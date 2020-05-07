@@ -14,6 +14,7 @@ Included components
    :maxdepth: 1
 
    cod
+   dcache
    dynafed
    eos
    rucio 
