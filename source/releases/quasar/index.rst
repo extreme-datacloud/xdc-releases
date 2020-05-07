@@ -31,6 +31,13 @@ Key technical highlights
 
   - improved Ansible recipes and new Ansible tasks for Kubernetes and Centos7 baremetal
 
+- dCache
+
+  - Many improvements and new features in all components, like the addition of experimental 
+    high-performance serialiser for messaging, support for dynamic pool groups in the 
+    poolmanager, support for clients presenting SciTokens, support for third-party copy 
+    (xrootd-TPC) and request signing in xrootd.
+
 - Dynafed
 
   - Dynafed can now function as the active party for data distribution, having enabled the "Fourth party copy" feature. 
@@ -80,12 +87,12 @@ Key technical highlights
 Release Notes
 =============
 
-The XDC-2 (Quasar) release consists in 8 Products:
+The XDC-2 (Quasar) release consists in 9 Products:
 
-- 77 OS packages
+- 79 OS packages
 
-  - 47 RPMS, SRPMS, and tarballs
-  - 35 binary & source DEBS
+  - 48 RPMS, SRPMS, and tarballs
+  - 36 binary & source DEBS
 
 - 8 Docker containers
 
