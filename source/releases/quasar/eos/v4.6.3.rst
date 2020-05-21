@@ -5,15 +5,21 @@ What’s new
 ~~~~~~~~~~
 
 - QoS classes
+
   - Addition of QoS classes and QoS API when interacting with namespace entries.
+
     - An administrator of the system may define QoS classes, which are composed of a 
       set of storage properties and allowed QoS transitions.
     - Using the CLI interface (or via HTTP calls), a client may query the QoS class 
       of an entry or request a QoS transition.
     - QoS classes for a particular entry are identified at runtime.
+
   - CDMI gateway for QoS transitions
+
     - Requires the cdmi-eos-qos plugin for the CDMI server
+
   - Converter engine
+
     - The converter engine is composed of two main components: Converter Driver and 
       Converter Scanner.
     - The Converter Driver has been reworked using a threadpool approach and saving 
@@ -21,7 +27,9 @@ What’s new
       This allows persistence (in case of an MGM shutdown), as well as more flexibility 
       over the conversion execution, such as runtime configurable threads and runtime 
       statistics.
+
   - Upcoming change:
+  
     - The Converter Scanner is a new component, using persistent storage as well, 
       acting like a background daemon, which scans namespace entries and identifies 
       files suitable for conversion, according to a given filter criteria.
