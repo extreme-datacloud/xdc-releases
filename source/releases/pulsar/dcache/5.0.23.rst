@@ -1,0 +1,41 @@
+v 5.0.23
+------------
+
+What’s new
+~~~~~~~~~~
+
+This release fixes a vulnerability in dCache’s XRootD protocol implementation. Details are published
+in the EGI SVG `Advisory-SVG-2019-16022 <https://wiki.egi.eu/wiki/SVG:Advisory-SVG-2019-16022>`_
+
+
+List of RfCs
+~~~~~~~~~~~~
+
+* **Changes affecting multiple services**
+
+  * The Apache Commons Compress library used in dCache was updated to version 1.19.
+  * A rare deadlock situation in the Chimera database was eliminated. 
+
+* Pool
+
+  * There were reports of extraordinarily high CPU usage on pool nodes with a large number of 
+    cached files. Through an optimization of the sweeper, CPU usage was reduced significantly.
+
+* XRootD
+
+  * This release fixes a vulnerability in dCache’s XRootD protocol implementation
+
+Documentation
+~~~~~~~~~~~~~
+
+Please find bellow notes on how to enable and exploit the new features introduced in this verions:
+
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+* CentOS-7 RPMS
+    * `dcache-5.0.23-1.noarch.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/dcache.html>`_
+
+
+* Ubuntu 16.04 DEBS
+    * `dcache-5.0.23-1_all.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/updates/binary-amd64/dcache_5.0.23-1_all.deb>`_ 
