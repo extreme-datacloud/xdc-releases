@@ -286,4 +286,4 @@ List of Artifacts
 
 
 * Ubuntu 16.04 DEBS
-    * `dcache-5.0.0-1.xdc.noarch.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/dcache_5.0.0-1.xdc_all.deb>`_ 
+    * `dcache-5.0.0-1.xdc_all.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/dcache_5.0.0-1.xdc_all.deb>`_ 
