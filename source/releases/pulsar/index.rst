@@ -83,12 +83,11 @@ The XDC-1 (Pulsar) release consists in X Products and and a number of technical 
 
 -  6 Docker containers
 
-The release is fully supported 
-- on the following Operating Systems platforms: 
-   - CentOS 7
-   - Ubuntu 16.04
-   - Optionally PTs support also other OS platforms. You can find more information in the individual
-     products documentation.
+The release is fully supported - on the following Operating Systems platforms: 
+
+- CentOS 7
+- Ubuntu 16.04
+- Optionally PTs support also other OS platforms. You can find more information in the individual products documentation.
 
 You can find in the later sections the full list of products, with
 detailed release notes and instructions for their
