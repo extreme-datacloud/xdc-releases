@@ -27,14 +27,14 @@ List of Artifacts
 
 * Ubuntu 16.04
 
-  * `cluster-manager_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/cluster-manager_18.02.0.rc13-1_amd64.deb>`_
-  * `oneclient_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneclient_18.02.0.rc13-1_amd64.deb>`_
-  * `oneprovider_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneprovider_18.02.0.rc13-1_amd64.deb>`_
-  * `onezone_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/onezone_18.02.0.rc13-1_amd64.deb>`_
-  * `op-panel_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-panel_18.02.0.rc13-1_amd64.deb>`_
-  * `op-worker_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-worker_18.02.0.rc13-1_amd64.deb>`_
-  * `oz-panel_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-panel_18.02.0.rc13-1_amd64.deb>`_
-  * `oz-worker_18.02.0.rc13-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-worker_18.02.0.rc13-1_amd64.deb>`_
+  * `cluster-manager_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/cluster-manager_18.02.0.rc13-1_amd64.deb>`_
+  * `oneclient_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneclient_18.02.0.rc13-1_amd64.deb>`_
+  * `oneprovider_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneprovider_18.02.0.rc13-1_amd64.deb>`_
+  * `onezone_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/onezone_18.02.0.rc13-1_amd64.deb>`_
+  * `op-panel_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-panel_18.02.0.rc13-1_amd64.deb>`_
+  * `op-worker_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-worker_18.02.0.rc13-1_amd64.deb>`_
+  * `oz-panel_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-panel_18.02.0.rc13-1_amd64.deb>`_
+  * `oz-worker_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-worker_18.02.0.rc13-1_amd64.deb>`_
 
 * Docker Container
 
