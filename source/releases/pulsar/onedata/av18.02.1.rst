@@ -4,7 +4,7 @@ v18.02.1
 What’s new
 ~~~~~~~~~~
 
-The new versions provides introduces changes in all components in order to support the onedataFS Python interface
+The new versions introduces changes in all components in order to support the newly added onedataFS Python interface
 
 
 Known Issues
