@@ -21,9 +21,10 @@ Release Notes
 .. toctree::
    :maxdepth: 1
    :glob:
-   :reversed:
 
-   paas-orchestrator/*
+   paas-orchestrator/v2.1.2-FINAL.rst
+   paas-orchestrator/v2.1.1-FINAL.rst
+
 
 Detailed documentation is available at:
 
