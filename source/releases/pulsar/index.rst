@@ -52,13 +52,13 @@ Key technical highlights:
   - External data adoption (Data already present on a system described
     above can be incorporated into EOS)
 
-- FTS & GFAL
+- FTS and GFAL
 
   - QoS support: can now accept a QoS job
   - OpenIDConnect support
   - QoS in gfal (gfal with basic cdmi client) – python bindings available
-
--  PaaS Orchestrator
+  
+- PaaS Orchestrator
 
   - Implementation of Dynafed plugin
   - Interaction via INDIGO IAM OAUTH2 token
