@@ -22,8 +22,7 @@ Release Notes
    :maxdepth: 1
    :glob:
 
-   paas-orchestrator/v2.1.2-FINAL.rst
-   paas-orchestrator/v2.1.1-FINAL.rst
+   paas-orchestrator/*
 
 
 Detailed documentation is available at:
