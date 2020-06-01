@@ -23,6 +23,7 @@ Included components
    paas-dashboard
    orchent
    ttt
+   xdc-http
 
 
 Key technical highlights
