@@ -57,8 +57,8 @@ List of Artifacts
 
 - Tarballs:
 
-  - `tosca-types-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/2/centos7/x86_64/tgz/tosca-types-v4.0.1.tar.gz>`_
-  - `tosca-templates-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/deep-hdc/production/2/centos7/x86_64/tgz/tosca-templates-v4.0.1.tar.gz>`_
+  - `tosca-types-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/tosca-types-v4.0.1.tar.gz>`_
+  - `tosca-templates-v4.0.1.tar.gz <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/tgz/tosca-templates-v4.0.1.tar.gz>`_
 
 - Source code:
 

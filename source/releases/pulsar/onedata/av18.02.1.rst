@@ -1,0 +1,46 @@
+v18.02.1
+------------
+
+What’s new
+~~~~~~~~~~
+
+The new versions introduces changes in all components in order to support the newly added onedataFS Python interface
+
+
+Known Issues
+~~~~~~~~~~~~
+
+* N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+* CentOS-7 RPMS
+
+  * `cluster-manager-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/cluster-manager.html>`_
+  * `oneclient-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/oneclient.html>`_
+  * `oneprovider-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/oneprovider.html>`_
+  * `onezone-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/onezone.html>`_
+  * `op-panel-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/op-panel.html>`_
+  * `op-worker-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/op-worker.html>`_
+  * `oz-panel-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/oz-panel.html>`_
+  * `oz-worker-18.02.1-1.el7.centos.x86_64.rpm <https://repo.indigo-datacloud.eu/repository/xdc/production/1/centos7/x86_64/updates/repoview/oz-worker.html>`_
+
+* Ubuntu 16.04
+
+  * `cluster-manager_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/cluster-manager_18.02.0.rc13-1_amd64.deb>`_
+  * `oneclient_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneclient_18.02.0.rc13-1_amd64.deb>`_
+  * `oneprovider_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oneprovider_18.02.0.rc13-1_amd64.deb>`_
+  * `onezone_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/onezone_18.02.0.rc13-1_amd64.deb>`_
+  * `op-panel_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-panel_18.02.0.rc13-1_amd64.deb>`_
+  * `op-worker_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/op-worker_18.02.0.rc13-1_amd64.deb>`_
+  * `oz-panel_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-panel_18.02.0.rc13-1_amd64.deb>`_
+  * `oz-worker_18.02.1-1_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/1/ubuntu/dists/xenial/main/binary-amd64/oz-worker_18.02.0.rc13-1_amd64.deb>`_
+
+* Docker Container
+
+  * `indigodatacloud/onezone XDC-1 (signed) <https://hub.docker.com/layers/indigodatacloud/onezone/XDC-1/images/sha256-e5d2aa4fc39fc281d8a3a0eba3df28841dc4e4ec6f0cc43a47281aef7e825afd?context=explore>`__
+  * `indigodatacloud/onezone 18.02.1 <https://hub.docker.com/layers/indigodatacloud/onezone/18.02.1/images/sha256-e5d2aa4fc39fc281d8a3a0eba3df28841dc4e4ec6f0cc43a47281aef7e825afd?context=explore>`__
+  * `indigodatacloud/oneprovider XDC-1 (signed) <https://hub.docker.com/layers/indigodatacloud/oneprovider/XDC-1/images/sha256-8511d0809ad8bf2f0d8d2c0825b4b0317c038c4619cc472df22913c303fa524d?context=explore/>`__
+  * `indigodatacloud/oneprovider 18.02.1 <https://hub.docker.com/layers/indigodatacloud/oneprovider/18.02.1/images/sha256-8511d0809ad8bf2f0d8d2c0825b4b0317c038c4619cc472df22913c303fa524d?context=explore>`__
+  * `indigodatacloud/oneclient XDC-1 (signed) <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-1/images/sha256-3c6d0e5cbb88953470db3525cec2ed3872b2136ad3cf1f845f3fe147fa373b12?context=explore>`__
+  * `indigodatacloud/oneclient 18.02.1 <https://hub.docker.com/layers/indigodatacloud/oneclient/18.02.1/images/sha256-3c6d0e5cbb88953470db3525cec2ed3872b2136ad3cf1f845f3fe147fa373b12?context=explore>`__

@@ -52,18 +52,19 @@ Key technical highlights:
   - External data adoption (Data already present on a system described
     above can be incorporated into EOS)
 
-- FTS & GFAL
+
+- FTS and GFAL
 
   - QoS support: can now accept a QoS job
   - OpenIDConnect support
   - QoS in gfal (gfal with basic cdmi client) – python bindings available
 
--  PaaS Orchestrator
+- PaaS Orchestrator
 
   - Implementation of Dynafed plugin
   - Interaction via INDIGO IAM OAUTH2 token
   - Enhancement of ONEDATA plugin
-
+  
 - Onedata
 
   - Performance and stability improvements
@@ -83,12 +84,11 @@ The XDC-1 (Pulsar) release consists in X Products and and a number of technical 
 
 -  6 Docker containers
 
-The release is fully supported 
-- on the following Operating Systems platforms: 
-   - CentOS 7
-   - Ubuntu 16.04
-   - Optionally PTs support also other OS platforms. You can find more information in the individual
-     products documentation.
+The release is fully supported - on the following Operating Systems platforms: 
+
+- CentOS 7
+- Ubuntu 16.04
+- Optionally PTs support also other OS platforms. You can find more information in the individual products documentation.
 
 You can find in the later sections the full list of products, with
 detailed release notes and instructions for their

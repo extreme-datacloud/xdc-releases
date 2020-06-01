@@ -1,0 +1,99 @@
+v20.02.0.beta3
+------------
+
+What’s new
+~~~~~~~~~~
+
+The new version provides many improvemenets and new features, and in particular in the
+context of the XDC project in order to support some of the use-cases, for the ECRIN and CTA, there are specific changes:
+
+- Improved changes stream (https://onedata.org/#/home/api/stable/oneprovider?anchor=operation/get_space_changes):
+
+  - fixed a bug where streams were not correctly closed in the Oneprovider
+  - introduced new format for subscribing only to events that the user needs (the changes API now accepts json with a POST request)
+
+- Onedatafs:
+
+  - improved stability of onedatafs when one instance is used by many concurrent threads
+
+- The ECRIN web portal allows browsing of thousands of clinical studies and related data objects references. 
+  It's a centralized gateway to multiple medical research resources. Key features introduced in this version are:
+
+  - searching studies and related data objects via titles, topics, identifiers and paper DOI,
+  - filtering query results based on studies and data objects characteristics,
+  - exporting results in a handy PDF format,
+  - saving found studies in the browser memory, so that they can be restored later
+  - can be configured via a customizable JSON - if you want to change filters, you don't have to change the source code!
+
+
+List of RfCs
+~~~~~~~~~~~~
+- N/A
+
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+
+- Detailed documentation on the Onedata platform installation is available at:
+
+  - `Oneprovider Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/deployment_tutorial.html>`_ 
+  - `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial.html>`_ 
+
+- Detailed documentation on the Onedata platform Updgrade is available at:
+
+  - `Oneprovider Upgrade <https://onedata.org/#/home/documentation/doc/administering_onedata/oneprovider_tutorial[upgrading].html>`_ 
+  - `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial[upgrading].html>`_ 
+
+Known Issues
+~~~~~~~~~~~~
+
+- N/A
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+
+- Dedicated scripts for:
+
+  - ECRON use case: `Metadata ingestion while traversing a space <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/space-traverse>`_
+  - CTA use case: `Metadata ingestion from the space changes stream <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/changes-stream>`_
+
+- CentOS-7 RPMS - version 20.02.0.beta3
+
+  - `cluster-manager <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-cluster-manager.html>`_
+  - `oneclient <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/oneclient.html>`_
+  - `oneprovider <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-oneprovider.html>`_
+  - `onezone <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-onezone.html>`_
+  - `op-panel <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-op-panel.html>`_
+  - `op-worker <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-op-worker.html>`_
+  - `oz-panel <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-oz-panel.html>`_
+  - `oz-worker <https://repo.indigo-datacloud.eu/repository/xdc/production/2/centos7/x86_64/updates/repoview/onedata2002-oz-worker.html>`_
+
+- Ubuntu 16.04
+
+  - `cluster-manager_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/cluster-manager_19.02.1-1~xenial_amd64.deb>`_
+  - `oneclient_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/oneclient_20.02.0.beta3-1~xenial_amd64.deb>`_
+  - `oneprovider_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/oneprovider_20.02.0.beta3-1~xenial_amd64.deb>`_
+  - `onezone_20.02.0.beta3~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/onezone_20.02.0.beta3-1~xenial_amd64.deb>`_
+  - `op-panel_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/op-panel_20.02.0.beta3-1~xenial_amd64.deb>`_
+  - `op-worker_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/op-worker_20.02.0.beta3-1~xenial_amd64.deb>`_
+  - `oz-panel_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/oz-panel_20.02.0.beta3-1~xenial_amd64.deb>`_
+  - `oz-worker_20.02.0.beta3-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial-updates/main/binary-amd64/oz-worker_20.02.0.beta31-1~xenial_amd64.deb>`_
+
+- Ubuntu 18.04
+
+  - `cluster-manager_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/cluster-manager_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `oneclient_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/oneclient_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `oneprovider_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/oneprovider_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `onezone_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/onezone_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `op-panel_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/op-panel_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `op-worker_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/op-worker_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `oz-panel_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/oz-panel_20.02.0.beta3-1~bionic_amd64.deb>`_
+  - `oz-worker_20.02.0.beta3-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic-updates/main/binary-amd64/oz-worker_20.02.0.beta3-1~bionic_amd64.deb>`_
+
+- Docker Container
+
+  - `indigodatacloud/onezone:XDC-2 <https://hub.docker.com/layers/indigodatacloud/onezone/XDC-2/images/sha256-ecb468fb433ffa6ea95b45fbad4ff2ce26ded8336121913cfd279823c852cd27?context=explore>`_(signed)
+  - `indigodatacloud/onezone:20.02.0.beta3 <https://hub.docker.com/layers/indigodatacloud/onezone/20.02.0-beta3/images/sha256-ecb468fb433ffa6ea95b45fbad4ff2ce26ded8336121913cfd279823c852cd27?context=explore>`_
+  - `indigodatacloud/oneprovider:XDC-2 <https://hub.docker.com/layers/indigodatacloud/oneprovider/XDC-2/images/sha256-44c43523997a2971fa84f18ccedc76d1e2f1a0b5cd1c0d14a46361534cd7a7b5?context=explore>`_(signed)
+  - `indigodatacloud/oneprovider:20.02.0.beta3 <https://hub.docker.com/layers/indigodatacloud/oneprovider/20.02.0-beta3/images/sha256-44c43523997a2971fa84f18ccedc76d1e2f1a0b5cd1c0d14a46361534cd7a7b5?context=explore>`_
+  - `indigodatacloud/oneclient:XDC-2  <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-284e2cd37f91c0d2d622d00e415f70f5ff5dcacaeeba63241963382fff4c29a9?context=explore>`_(signed)
+  - `indigodatacloud/oneclient:20.02.0.beta3 <https://hub.docker.com/layers/indigodatacloud/oneclient/20.02.0-beta3/images/sha256-284e2cd37f91c0d2d622d00e415f70f5ff5dcacaeeba63241963382fff4c29a9?context=explore>`_
