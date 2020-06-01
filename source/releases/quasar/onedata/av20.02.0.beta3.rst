@@ -26,8 +26,6 @@ context of the XDC project in order to support some of the use-cases, for the EC
   - can be configured via a customizable JSON - if you want to change filters, you don't have to change the source code!
 
 
-
-
 List of RfCs
 ~~~~~~~~~~~~
 - N/A
@@ -36,9 +34,12 @@ Installation methods
 ~~~~~~~~~~~~~~~~~~~~
 
 - Detailed documentation on the Onedata platform installation is available at:
+
   - `Oneprovider Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/deployment_tutorial.html>`_ 
   - `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial.html>`_ 
+
 - Detailed documentation on the Onedata platform Updgrade is available at:
+
   - `Oneprovider Upgrade <https://onedata.org/#/home/documentation/doc/administering_onedata/oneprovider_tutorial[upgrading].html>`_ 
   - `Onezone Installation and Condiguration <https://onedata.org/#/home/documentation/doc/administering_onedata/onezone_tutorial[upgrading].html>`_ 
 
@@ -51,6 +52,7 @@ List of Artifacts
 ~~~~~~~~~~~~~~~~~
 
 - Dedicated scripts for:
+
   - ECRON use case: `Metadata ingestion while traversing a space <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/space-traverse>`_
   - CTA use case: `Metadata ingestion from the space changes stream <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/changes-stream>`_
 

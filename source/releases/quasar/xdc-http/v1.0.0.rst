@@ -1,0 +1,39 @@
+v1.0.0
+------------
+
+What’s new
+~~~~~~~~~~
+
+This is the first release of the XDC HTTP Caching solution, xdc-http-cache, that includes instructions
+to instantiate proper configured User Interface, Dynafed, IAM, VOMS-AA, StoRM WebDAV and Nginx services
+
+- Each service can be used independently
+- Nginx is the main component which has been rebuild with an additional module to inspect VOMS proxy
+- Each service supports OIDC token and VOMS proxy authentication
+
+Known Issues
+~~~~~~~~~~~~
+
+* N/A
+
+Installation methods
+~~~~~~~~~~~~~~~~~~~~
+
+- Detailed documentation is available at:
+  - `GitHub Readme <https://github.com/extreme-datacloud/xdc_http_cache/blob/v1.0.0/README.md>`_ 
+
+List of Artifacts
+~~~~~~~~~~~~~~~~~
+
+- Docker images:
+
+  - `xdc-http-cache-dynafed:XDC-2 (signed) <https://hub.docker.com/layers/extremedatacloud/xdc-http-cache-dynafed/XDC-2/images/sha256-4c6c660c8325cbe4e0364603bf442aa312955704f09396cf195f375cf15dcd2e?context=repo>`_
+  - `xdc-http-cache-dynafed:v1.0.0 <https://hub.docker.com/layers/extremedatacloud/xdc-http-cache-dynafed/v1.0.0/images/sha256-4c6c660c8325cbe4e0364603bf442aa312955704f09396cf195f375cf15dcd2e?context=repo>`_
+  - `xdc-http-cache-nginx:XDC-2 (signed) <https://hub.docker.com/layers/extremedatacloud/xdc-http-cache-nginx/XDC-2/images/sha256-fde3f9864408250e0611f44c98140f31887829e2e202207c3af8670d536fc87d?context=repo>`_
+  - `xdc-http-cache-nginx:v1.0.0 <https://hub.docker.com/layers/extremedatacloud/xdc-http-cache-nginx/v1.0.0/images/sha256-fde3f9864408250e0611f44c98140f31887829e2e202207c3af8670d536fc87d?context=repo>`_
+  - `xdc-http-cache-vomsaa:XDC-2 (signed) <https://hub.docker.com/layers/extremedatacloud/xdc-http-cache-vomsaa/XDC-2/images/sha256-d4f55ffaee64b314fc03e1b1eb50130f24d02b52a42febd5247fb605ffcfccb3?context=repo>`_
+  - `xdc-http-cache-vomsaa:v1.0.0 <https://hub.docker.com/layers/extremedatacloud/xdc-http-cache-vomsaa/v1.0.0/images/sha256-d4f55ffaee64b314fc03e1b1eb50130f24d02b52a42febd5247fb605ffcfccb3?context=repo>`_
+  
+
+
+
