@@ -95,8 +95,9 @@ List of Artifacts
   
 
 - Docker Container:
-  - `indigodatacloud/rucio-server:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/XDC-2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__ (signed)
-  - `indigodatacloud/rucio-daemons:XDC-2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/XDC-2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__ (signed)
+
+  - `indigodatacloud/rucio-server:XDC-2 (signed) <https://hub.docker.com/layers/indigodatacloud/rucio-server/XDC-2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__
+  - `indigodatacloud/rucio-daemons:XDC-2 (signed) <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/XDC-2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__
   - `indigodatacloud/rucio-server:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-server/release-1.22.0rc2/images/sha256-43eb4328c132c3c1b6bc9d7dd0a4b11025ef1d806af27710cc9979601c03466c?context=repo>`__
   - `indigodatacloud/rucio-daemons:release-1.22.0rc2 <https://hub.docker.com/layers/indigodatacloud/rucio-daemons/release-1.22.0rc2/images/sha256-169a0958e7c61e3a6ba0aca42f49554f30903dc051fe7a0b0e9c554034cb135d?context=repo>`__
 

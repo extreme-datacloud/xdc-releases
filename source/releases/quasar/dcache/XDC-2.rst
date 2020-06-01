@@ -26,7 +26,7 @@ Upstream corresponding version: v. 6.1.3
   property have to set the old default value: **pool.plugins.meta=org.dcache.pool.repository.meta.file.FileMetaDataRepository**
 
 - Pool in 6.1.x are not compatible with older dcap doors. However, new dcap doors can 
-operate with existing pools.
+  operate with existing pools.
 
 
 List of RfCs

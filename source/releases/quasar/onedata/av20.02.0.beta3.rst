@@ -91,9 +91,9 @@ List of Artifacts
 
 - Docker Container
 
-  - `indigodatacloud/onezone:XDC-2 <https://hub.docker.com/layers/indigodatacloud/onezone/XDC-2/images/sha256-ecb468fb433ffa6ea95b45fbad4ff2ce26ded8336121913cfd279823c852cd27?context=explore>`_(signed)
+  - `indigodatacloud/onezone:XDC-2 (signed) <https://hub.docker.com/layers/indigodatacloud/onezone/XDC-2/images/sha256-ecb468fb433ffa6ea95b45fbad4ff2ce26ded8336121913cfd279823c852cd27?context=explore>`_
   - `indigodatacloud/onezone:20.02.0.beta3 <https://hub.docker.com/layers/indigodatacloud/onezone/20.02.0-beta3/images/sha256-ecb468fb433ffa6ea95b45fbad4ff2ce26ded8336121913cfd279823c852cd27?context=explore>`_
-  - `indigodatacloud/oneprovider:XDC-2 <https://hub.docker.com/layers/indigodatacloud/oneprovider/XDC-2/images/sha256-44c43523997a2971fa84f18ccedc76d1e2f1a0b5cd1c0d14a46361534cd7a7b5?context=explore>`_(signed)
+  - `indigodatacloud/oneprovider:XDC-2 (signed) <https://hub.docker.com/layers/indigodatacloud/oneprovider/XDC-2/images/sha256-44c43523997a2971fa84f18ccedc76d1e2f1a0b5cd1c0d14a46361534cd7a7b5?context=explore>`_
   - `indigodatacloud/oneprovider:20.02.0.beta3 <https://hub.docker.com/layers/indigodatacloud/oneprovider/20.02.0-beta3/images/sha256-44c43523997a2971fa84f18ccedc76d1e2f1a0b5cd1c0d14a46361534cd7a7b5?context=explore>`_
-  - `indigodatacloud/oneclient:XDC-2  <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-284e2cd37f91c0d2d622d00e415f70f5ff5dcacaeeba63241963382fff4c29a9?context=explore>`_(signed)
+  - `indigodatacloud/oneclient:XDC-2 (signed) <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-284e2cd37f91c0d2d622d00e415f70f5ff5dcacaeeba63241963382fff4c29a9?context=explore>`_
   - `indigodatacloud/oneclient:20.02.0.beta3 <https://hub.docker.com/layers/indigodatacloud/oneclient/20.02.0-beta3/images/sha256-284e2cd37f91c0d2d622d00e415f70f5ff5dcacaeeba63241963382fff4c29a9?context=explore>`_
