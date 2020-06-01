@@ -91,8 +91,8 @@ List of Artifacts
   - `cluster-manager_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/cluster-manager_19.02.1-1~xenial_amd64.deb>`_
   - `oneclient_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oneclient_19.02.1-1~xenial_amd64.deb>`_
   - `oneprovider_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oneprovider_19.02.1-1~xenial_amd64.deb>`_
-  - `onezone_onezone_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/onezone_onezone_19.02.1-1~xenial_amd64.deb>`_
-  - `op-panel_op-panel_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/op-panel_op-panel_19.02.1-1~xenial_amd64.deb>`_
+  - `onezone_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/onezone_19.02.1-1~xenial_amd64.deb>`_
+  - `op-panel_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/op-panel_19.02.1-1~xenial_amd64.deb>`_
   - `op-worker_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/op-worker_19.02.1-1~xenial_amd64.deb>`_
   - `oz-panel_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oz-panel_19.02.1-1~xenial_amd64.deb>`_
   - `oz-worker_19.02.1-1~xenial_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/xenial/main/binary-amd64/oz-worker_19.02.1-1~xenial_amd64.deb>`_
@@ -102,17 +102,17 @@ List of Artifacts
   - `cluster-manager_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/cluster-manager_19.02.1-1~bionic_amd64.deb>`_
   - `oneclient_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oneclient_19.02.1-1~bionic_amd64.deb>`_
   - `oneprovider_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oneprovider_19.02.1-1~bionic_amd64.deb>`_
-  - `onezone_onezone_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/onezone_onezone_19.02.1-1~bionic_amd64.deb>`_
-  - `op-panel_op-panel_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/op-panel_op-panel_19.02.1-1~bionic_amd64.deb>`_
+  - `onezone_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/onezone_19.02.1-1~bionic_amd64.deb>`_
+  - `op-panel_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/ op-panel_19.02.1-1~bionic_amd64.deb>`_
   - `op-worker_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/op-worker_19.02.1-1~bionic_amd64.deb>`_
   - `oz-panel_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oz-panel_19.02.1-1~bionic_amd64.deb>`_
   - `oz-worker_19.02.1-1~bionic_amd64.deb <https://repo.indigo-datacloud.eu/repository/xdc/production/2/ubuntu/dists/bionic/main/binary-amd64/oz-worker_19.02.1-1~bionic_amd64.deb>`_
 
 - Docker Container
 
-  - `indigodatacloud/onezone:XDC-2 <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_(signed)
+  - `indigodatacloud/onezone:XDC-2 <https://hub.docker.com/r/indigodatacloud/onezone/tags>`_(signed)
   - `indigodatacloud/onezone:19.02.1 <https://hub.docker.com/layers/indigodatacloud/oneclient/19.02.1/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_
-  - `indigodatacloud/oneprovider:XDC-2 <https://hub.docker.com/layers/indigodatacloud/oneprovider/XDC-2/images/sha256-1968838645b5aaab1d487f2ba55997c64b703c35734bc88f5fcb340986ae8b4b?context=repo>`_(signed)
+  - `indigodatacloud/oneprovider:XDC-2 <https://hub.docker.com/r/indigodatacloud/oneprovider/tags>`_(signed)
   - `indigodatacloud/oneprovider:19.02.1-1 <https://hub.docker.com/layers/indigodatacloud/oneprovider/19.02.1/images/sha256-1968838645b5aaab1d487f2ba55997c64b703c35734bc88f5fcb340986ae8b4b?context=repo>`_
-  - `indigodatacloud/oneclient:XDC-2  <https://hub.docker.com/layers/indigodatacloud/oneclient/XDC-2/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_(signed)
+  - `indigodatacloud/oneclient:XDC-2  <https://hub.docker.com/r/indigodatacloud/oneclient/tags>`_(signed)
   - `indigodatacloud/oneclient:19.02.1-1 <https://hub.docker.com/layers/indigodatacloud/oneclient/19.02.1/images/sha256-cfae5ffb0cd3d6e073f3a4d35f26a8964781206cc7eae1846447e46129eb270a?context=repo>`_

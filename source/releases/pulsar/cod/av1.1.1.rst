@@ -23,5 +23,5 @@ List of Artifacts
 
 * Docker Container:
 
-    * `indigodatacloud/cachingondemand XDC-1 (signed) <https://hub.docker.com/layers/indigodatacloud/cachingondemand/XDC-1/images/sha256-1e06835a16de12a153141835053251a94bc41be43d87258b29dabde1caab07f8?context=explore>`__
-    * `indigodatacloud/cachingondemand 1.1.1 <https://hub.docker.com/layers/indigodatacloud/cachingondemand/v1.1.1/images/sha256-1e06835a16de12a153141835053251a94bc41be43d87258b29dabde1caab07f8?context=explore>`__
+  * `indigodatacloud/cachingondemand XDC-1 (signed) <https://hub.docker.com/layers/indigodatacloud/cachingondemand/XDC-1/images/sha256-1e06835a16de12a153141835053251a94bc41be43d87258b29dabde1caab07f8?context=explore>`__
+  * `indigodatacloud/cachingondemand 1.1.1 <https://hub.docker.com/layers/indigodatacloud/cachingondemand/v1.1.1/images/sha256-1e06835a16de12a153141835053251a94bc41be43d87258b29dabde1caab07f8?context=explore>`__
