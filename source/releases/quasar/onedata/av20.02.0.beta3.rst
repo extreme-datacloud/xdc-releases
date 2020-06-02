@@ -53,7 +53,7 @@ List of Artifacts
 
 - Dedicated scripts for:
 
-  - ECRON use case: `Metadata ingestion while traversing a space <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/space-traverse>`_
+  - ECRIN use case: `Metadata ingestion while traversing a space <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/space-traverse>`_
   - CTA use case: `Metadata ingestion from the space changes stream <https://github.com/indigo-dc/onedata-samples/tree/v1.2/metadata/changes-stream>`_
 
 - CentOS-7 RPMS - version 20.02.0.beta3
