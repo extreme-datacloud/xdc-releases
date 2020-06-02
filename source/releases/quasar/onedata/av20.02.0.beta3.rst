@@ -4,26 +4,28 @@ v20.02.0.beta3
 What’s new
 ~~~~~~~~~~
 
-The new version provides many improvemenets and new features, and in particular in the
-context of the XDC project in order to support some of the use-cases, for the ECRIN and CTA, there are specific changes:
+The new version provides many improvemenets and new features, like:
 
-- Improved changes stream (https://onedata.org/#/home/api/stable/oneprovider?anchor=operation/get_space_changes):
+- New Quality of Service management system with graphical interface support
+- In particular for the ECRIN and CTA use cases, there are specific changes:
 
-  - fixed a bug where streams were not correctly closed in the Oneprovider
-  - introduced new format for subscribing only to events that the user needs (the changes API now accepts json with a POST request)
+  - Improved changes stream (https://onedata.org/#/home/api/stable/oneprovider?anchor=operation/get_space_changes):
 
-- Onedatafs:
+    - fixed a bug where streams were not correctly closed in the Oneprovider
+    - introduced new format for subscribing only to events that the user needs (the changes API now accepts json with a POST request)
 
-  - improved stability of onedatafs when one instance is used by many concurrent threads
+  - Onedatafs:
 
-- The ECRIN web portal allows browsing of thousands of clinical studies and related data objects references. 
-  It's a centralized gateway to multiple medical research resources. Key features introduced in this version are:
+    - improved stability of onedatafs when one instance is used by many concurrent threads
 
-  - searching studies and related data objects via titles, topics, identifiers and paper DOI,
-  - filtering query results based on studies and data objects characteristics,
-  - exporting results in a handy PDF format,
-  - saving found studies in the browser memory, so that they can be restored later
-  - can be configured via a customizable JSON - if you want to change filters, you don't have to change the source code!
+  - The ECRIN web portal allows browsing of thousands of clinical studies and related data objects references. 
+    It's a centralized gateway to multiple medical research resources. Key features introduced in this version are:
+
+    - searching studies and related data objects via titles, topics, identifiers and paper DOI,
+    - filtering query results based on studies and data objects characteristics,
+    - exporting results in a handy PDF format,
+    - saving found studies in the browser memory, so that they can be restored later
+    - can be configured via a customizable JSON - if you want to change filters, you don't have to change the source code!
 
 
 List of RfCs
